@@ -1,0 +1,6 @@
+sudo: true
+before_script: bash ./init.sh
+script: bash ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/UVicNotes/CSC-370.git
