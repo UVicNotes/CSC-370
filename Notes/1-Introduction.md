@@ -49,7 +49,3 @@ SELECT accountNo
 FROM Accounts
 WHERE type = ‘savings’ AND balance < 0;
 ```
-
-# Entity-Relationship Model
-
-In the database both *entities* and *relationships* will be translated to *relations* (tables).
