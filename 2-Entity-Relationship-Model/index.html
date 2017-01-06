@@ -9,49 +9,47 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>CSC 370 - Course Notes for CSC 370 - Foundations of Computer Science</title>
+        <title>2 Entity Relationship Model - CSC 370</title>
       
       
-        <meta name="description" content="Course Notes for CSC 370 - Foundations of Computer Science">
       
-      
-        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/">
+        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/2-Entity-Relationship-Model/">
       
       
         <meta name="author" content="Brynn Hawker">
       
     
-    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/">
+    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/2-Entity-Relationship-Model/">
     <meta property="og:title" content="CSC 370">
-    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370//./img/UVicNotes-Logo.svg">
+    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370/2-Entity-Relationship-Model//../img/UVicNotes-Logo.svg">
     <meta name="apple-mobile-web-app-title" content="CSC 370">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-      <link rel="apple-touch-icon" href="./img/UVicNotes-Logo.svg">
+      <link rel="apple-touch-icon" href="../img/UVicNotes-Logo.svg">
     
     
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon-e565ddfa3b.ico">
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-e565ddfa3b.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
     <style>
       @font-face {
       	font-family: 'Icon';
-      	src: url('./assets/fonts/icon.eot?52m981');
-      	src: url('./assets/fonts/icon.eot?#iefix52m981')
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
                format('embedded-opentype'),
-      		   url('./assets/fonts/icon.woff?52m981')
+      		   url('../assets/fonts/icon.woff?52m981')
                format('woff'),
-      		   url('./assets/fonts/icon.ttf?52m981')
+      		   url('../assets/fonts/icon.ttf?52m981')
                format('truetype'),
-      		   url('./assets/fonts/icon.svg?52m981#icon')
+      		   url('../assets/fonts/icon.svg?52m981#icon')
                format('svg');
       	font-weight: normal;
       	font-style: normal;
       }
     </style>
-    <link rel="stylesheet" href="./assets/stylesheets/application-a422ff04cc.css">
+    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
     
-      <link rel="stylesheet" href="./assets/stylesheets/palettes-05ab2406df.css">
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
     
     
       
@@ -68,7 +66,7 @@
       </style>
     
     
-    <script src="./assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
     
   </head>
   
@@ -100,7 +98,7 @@
             
           </span>
         
-        CSC 370
+        2 Entity Relationship Model
       </div>
     </div>
     
@@ -138,7 +136,7 @@
     <div class="banner">
       
         <div class="logo">
-          <img src="./img/UVicNotes-Logo.svg">
+          <img src="../img/UVicNotes-Logo.svg">
         </div>
       
       <div class="name">
@@ -179,8 +177,26 @@
           
             
   <li>
-    <a class="current" title="Home" href=".">
+    <a class="" title="Home" href="..">
       Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="1 Introduction" href="../1-Introduction/">
+      1 Introduction
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="2 Entity Relationship Model" href="./">
+      2 Entity Relationship Model
     </a>
     
       
@@ -190,49 +206,13 @@
         <ul>
           
             <li class="anchor">
-              <a title="Connex" href="#connex">
-                Connex
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Overview" href="#overview">
-                Overview
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Textbook" href="#textbook">
-                Textbook
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Assessment" href="#assessment">
-                Assessment
+              <a title="Example" href="#example">
+                Example
               </a>
             </li>
           
         </ul>
       
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="" title="1 Introduction" href="1-Introduction/">
-      1 Introduction
-    </a>
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="" title="2 Entity Relationship Model" href="2-Entity-Relationship-Model/">
-      2 Entity Relationship Model
-    </a>
     
   </li>
 
@@ -261,61 +241,21 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="csc-370">CSC 370</h1>
-<h2 id="connex"><a href="https://connex.csc.uvic.ca/portal/site/260f967a-d51f-4bb8-b01a-82f93e87504d/">Connex</a></h2>
+          <h1 id="entity-relationship-model">Entity Relationship Model</h1>
+<p><strong>Lecture 2 - January 6, 2017</strong></p>
+<p><em>definition:</em> The <strong>Entity Relationship Model</strong> is a notation for expressing database designs.</p>
+<p>In the database both <em>entities</em> and <em>relationships</em> will be translated to <em>relations</em> (tables).</p>
+<h4 id="example">Example</h4>
+<p>We can represent a database for movies as follows,</p>
+<p><img alt="" src="../img/Relational-Diagram.svg" /></p>
+<p>In this diagram,</p>
 <ul>
-<li><strong>Instructor</strong>: Alex Thomo</li>
-<li><strong>Office</strong>: ECS 556</li>
-<li><strong>Email</strong>: <a href="mailto:thomo@cs.uvic.ca">thomo@cs.uvic.ca</a></li>
-<li><strong>Office Hours</strong>:</li>
-<li>Wednesdays, 2:30 PM to 3:30 PM</li>
-<li>Firdays, 3:30 PM to 4:30 PM</li>
+<li><strong>Squares</strong> represent entities.</li>
+<li><strong>Circles</strong> represent attributes.</li>
+<li><strong>Diamonds</strong> represent relations.</li>
+<li><strong>Arrows</strong> represent a singular relations.</li>
 </ul>
-<h2 id="overview">Overview</h2>
-<p>This course is an introduction to database systems. Topics include database design, query languages, query optimization, concurrency control, and recovery from failures. The major topics to cover are:</p>
-<ul>
-<li>Database design</li>
-<li>Relational Algebra</li>
-<li>SQL</li>
-<li>Data Analytics</li>
-<li>Security</li>
-<li>Query evaluation</li>
-<li>Transaction Management</li>
-<li>Recovery from System Failures</li>
-<li>NoSQL Databases</li>
-</ul>
-<h2 id="textbook">Textbook</h2>
-<ul>
-<li>Database Systems: The Complete Book</li>
-<li>Author: Hector Garcia-Molina, Jeffrey D. Ullman, and   * Jennifer D. Widom</li>
-<li>Publisher: Prentice Hall</li>
-<li>ISBN: 0131873253</li>
-<li>Year: 2008</li>
-<li>Edition: 2nd Edition</li>
-</ul>
-<h2 id="assessment">Assessment</h2>
-<table>
-<thead>
-<tr>
-<th>Task</th>
-<th align="center">Weight</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Assignments</td>
-<td align="center">30%</td>
-</tr>
-<tr>
-<td>Midterm</td>
-<td align="center">20%</td>
-</tr>
-<tr>
-<td>Final</td>
-<td align="center">50%</td>
-</tr>
-</tbody>
-</table>
+<p>So <strong>one</strong> studio <em>owns</em> <strong>many</strong> movies.</p>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -332,24 +272,24 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-    </div>
-    <div class="next">
-      
-        <a href="1-Introduction/" title="1 Introduction">
+        <a href="../1-Introduction/" title="1 Introduction">
           <span class="direction">
-            Next
+            Previous
           </span>
           <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
             <div class="stretch">
               <div class="title">
                 1 Introduction
               </div>
             </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
           </div>
         </a>
+      
+    </div>
+    <div class="next">
       
     </div>
   </nav>
@@ -368,10 +308,10 @@
       </div>
     </main>
     <script>
-      var base_url = '.';
+      var base_url = '..';
       var repo_id  = 'UVicNotes/CSC-370';
     </script>
-    <script src="./assets/javascripts/application-997097ee0c.js"></script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
     
       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
