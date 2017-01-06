@@ -1,0 +1,59 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "CSC 370\n\n\nConnex\n\n\n\n\nInstructor\n: Alex Thomo\n\n\nOffice\n: ECS 556\n\n\nEmail\n: \nthomo@cs.uvic.ca\n\n\nOffice Hours\n:\n\n\nWednesdays, 2:30 PM to 3:30 PM\n\n\nFirdays, 3:30 PM to 4:30 PM\n\n\n\n\nOverview\n\n\nThis course is an introduction to database systems. Topics include database design, query languages, query optimization, concurrency control, and recovery from failures. The major topics to cover are:\n\n\n\n\nDatabase design\n\n\nRelational Algebra\n\n\nSQL\n\n\nData Analytics\n\n\nSecurity\n\n\nQuery evaluation\n\n\nTransaction Management\n\n\nRecovery from System Failures\n\n\nNoSQL Databases\n\n\n\n\nTextbook\n\n\n\n\nDatabase Systems: The Complete Book\n\n\nAuthor: Hector Garcia-Molina, Jeffrey D. Ullman, and   * Jennifer D. Widom\n\n\nPublisher: Prentice Hall\n\n\nISBN: 0131873253\n\n\nYear: 2008\n\n\nEdition: 2nd Edition\n\n\n\n\nAssessment\n\n\n\n\n\n\n\n\nTask\n\n\nWeight\n\n\n\n\n\n\n\n\n\n\nAssignments\n\n\n30%\n\n\n\n\n\n\nMidterm\n\n\n20%\n\n\n\n\n\n\nFinal\n\n\n50%", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#csc-370", 
+            "text": "", 
+            "title": "CSC 370"
+        }, 
+        {
+            "location": "/#connex", 
+            "text": "Instructor : Alex Thomo  Office : ECS 556  Email :  thomo@cs.uvic.ca  Office Hours :  Wednesdays, 2:30 PM to 3:30 PM  Firdays, 3:30 PM to 4:30 PM", 
+            "title": "Connex"
+        }, 
+        {
+            "location": "/#overview", 
+            "text": "This course is an introduction to database systems. Topics include database design, query languages, query optimization, concurrency control, and recovery from failures. The major topics to cover are:   Database design  Relational Algebra  SQL  Data Analytics  Security  Query evaluation  Transaction Management  Recovery from System Failures  NoSQL Databases", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/#textbook", 
+            "text": "Database Systems: The Complete Book  Author: Hector Garcia-Molina, Jeffrey D. Ullman, and   * Jennifer D. Widom  Publisher: Prentice Hall  ISBN: 0131873253  Year: 2008  Edition: 2nd Edition", 
+            "title": "Textbook"
+        }, 
+        {
+            "location": "/#assessment", 
+            "text": "Task  Weight      Assignments  30%    Midterm  20%    Final  50%", 
+            "title": "Assessment"
+        }, 
+        {
+            "location": "/1-Introduction/", 
+            "text": "Introduction\n\n\nLecture 1 - January 4, 2017\n\n\nWhat is a database?\n\n\ndefinition:\n A \ndatabase\n is a collection of information that exists over a long period of time.\n\n\nA \nDatabase Management System (DBMS)\n a complex system for managing database interactions.\n\n\n\n\nAllows users to \neasily\n create new databases and specify schema.\n\n\nEnables users for \nsearch\n and \nmodify\n data.\n\n\nStores data \nintelligently\n,\n\n\nProtects from accidental use\n\n\nAllows efficient access, e.g., indexing\n\n\n\n\n\n\nManages \ncuncurrent\n data accesses and modifications.\n\n\nRecovers from failures and crashes.\n\n\n\n\nRelational Databases\n\n\nA database system should present the user with a view of the data organized as \ntables\n (or \nrelations\n).\n\n\nSo \nRelations\n are represented as \nTables\n, column headers are \nattribute names\n. Each row is a \ntuple\n.\n\n\nAccess with \nStructured Query Language (SQL)\n.\n\n\ne.g.\n\n\nGiven the database\n\n\n\n\n\n\n\n\naccountNo\n\n\nbalance\n\n\ntype\n\n\n\n\n\n\n\n\n\n\n12345\n\n\n1000.00\n\n\nsavings\n\n\n\n\n\n\n67890\n\n\n2846.92\n\n\nchecking\n\n\n\n\n\n\n...\n\n\n...\n\n\n...\n\n\n\n\n\n\n\n\n\n\nWhat\u2019s the balance of account \u201c67890\u201d?\n\n\n\n\nSELECT balance\nFROM Accounts\nWHERE accountNo = 67890;\n\n\n\n\n\n\nWhich are the savings accounts with negative balances?\n\n\n\n\nSELECT accountNo\nFROM Accounts\nWHERE type = \u2018savings\u2019 AND balance \n 0;", 
+            "title": "1 Introduction"
+        }, 
+        {
+            "location": "/1-Introduction/#introduction", 
+            "text": "Lecture 1 - January 4, 2017", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/1-Introduction/#what-is-a-database", 
+            "text": "definition:  A  database  is a collection of information that exists over a long period of time.  A  Database Management System (DBMS)  a complex system for managing database interactions.   Allows users to  easily  create new databases and specify schema.  Enables users for  search  and  modify  data.  Stores data  intelligently ,  Protects from accidental use  Allows efficient access, e.g., indexing    Manages  cuncurrent  data accesses and modifications.  Recovers from failures and crashes.", 
+            "title": "What is a database?"
+        }, 
+        {
+            "location": "/1-Introduction/#relational-databases", 
+            "text": "A database system should present the user with a view of the data organized as  tables  (or  relations ).  So  Relations  are represented as  Tables , column headers are  attribute names . Each row is a  tuple .  Access with  Structured Query Language (SQL) .", 
+            "title": "Relational Databases"
+        }, 
+        {
+            "location": "/1-Introduction/#eg", 
+            "text": "Given the database     accountNo  balance  type      12345  1000.00  savings    67890  2846.92  checking    ...  ...  ...      What\u2019s the balance of account \u201c67890\u201d?   SELECT balance\nFROM Accounts\nWHERE accountNo = 67890;   Which are the savings accounts with negative balances?   SELECT accountNo\nFROM Accounts\nWHERE type = \u2018savings\u2019 AND balance   0;", 
+            "title": "e.g."
+        }
+    ]
+}
