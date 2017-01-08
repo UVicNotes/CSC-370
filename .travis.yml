@@ -1,4 +1,5 @@
 sudo: true
+language: node_js
 before_script: bash ./init.sh
 script: bash ./deploy.sh
 env:

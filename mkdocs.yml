@@ -1,6 +1,6 @@
 site_name: CSC 370
 docs_dir: Notes
-theme_dir: Theme
+theme_dir: theme
 site_url: http://uvicnotes.github.io/CSC-370/
 repo_url: https://github.com/UVicNotes/CSC-370
 site_description: Course Notes for CSC 370 - Foundations of Computer Science
