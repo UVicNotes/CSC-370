@@ -15,8 +15,5 @@ extra:
   palette:
     primary: 'cyan'
     accent: 'orange'
-  font:
-    text: 'Source Sans Pro'
-    code: 'Source Code Pro'
   author:
     github: 'UVicNotes'
