@@ -27,11 +27,11 @@ This course is an introduction to database systems. Topics include database desi
 ## Textbook
 
 * Database Systems: The Complete Book
-  * Author: Hector Garcia-Molina, Jeffrey D. Ullman, and   * Jennifer D. Widom
-  * Publisher: Prentice Hall
-  * ISBN: 0131873253
-  * Year: 2008
-  * Edition: 2nd Edition
+    * Author: Hector Garcia-Molina, Jeffrey D. Ullman, and   * Jennifer D. Widom
+    * Publisher: Prentice Hall
+    * ISBN: 0131873253
+    * Year: 2008
+    * Edition: 2nd Edition
 
 
 ## Assessment
