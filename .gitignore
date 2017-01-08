@@ -1,8 +1,13 @@
 # Built files from mkdocs
 site/
 
+# Theme Directory and stuff
+NotesTheme*
+theme/
+
 # Binary Files
 *.pdf
+*.zip
 
 # Files for working with
 Assignment-*/

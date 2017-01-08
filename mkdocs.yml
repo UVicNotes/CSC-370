@@ -1,5 +1,6 @@
 site_name: CSC 370
 docs_dir: Notes
+theme_dir: Theme
 site_url: http://uvicnotes.github.io/CSC-370/
 repo_url: https://github.com/UVicNotes/CSC-370
 site_description: Course Notes for CSC 370 - Foundations of Computer Science
@@ -9,9 +10,8 @@ extra_javascript:
     - https://cdn.rawgit.com/UVicNotes/UVicNotes/81099952ba789829fab1840e5d26cb5a2bf62011/helpers/mathjax.js
 markdown_extensions:
     - mdx_math
-theme: 'material'
 extra:
-  logo: 'img/UVicNotes-Logo.svg'
+  version: 'Spring 2017'
   palette:
     primary: 'cyan'
     accent: 'orange'
