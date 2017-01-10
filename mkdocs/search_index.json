@@ -57,7 +57,7 @@
         }, 
         {
             "location": "/2-Entity-Relationship-Model/", 
-            "text": "Entity Relationship Model\n\n\nLecture 2 - January 6, 2017\n\n\ndefinition:\n The \nEntity Relationship Model\n is a notation for expressing database designs.\n\n\nIn the database both \nentities\n and \nrelationships\n will be translated to \nrelations\n (tables).\n\n\nExample\n\n\nWe can represent a database for movies as follows,\n\n\n\n\nIn this diagram,\n\n\n\n\nSquares\n represent entities.\n\n\nCircles\n represent attributes.\n\n\nDiamonds\n represent relations.\n\n\nArrows\n represent a singular relations.\n\n\n\n\nSo \none\n studio \nowns\n \nmany\n movies.\n\n\nKeys\n\n\ndefinition\n: A \nkey\n is an attribute, or a set of attributes, such that no two entities have the same key.\n\n\nIn Entity-Relationship diagrams we \nunderline\n the keys,\n\n\n\n\nA \nsurrogate key\n is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.\n\n\nRules\n\n\nAn entity set should satisfy one of the following\n\n\n\n\nIt's more then the name of something, i.e., it has a non-key attribute.\n\n\nIt's the \"many\" side in a relationship.\n\n\n\n\nExample\n\n\nGive an E/R diagram for a database recording information about teams, players, and their fans, including:\n\n\n\n\nFor each team, its name, its players, its team captain (one of its players), and the colors of its uniform.\n\n\nFor each player, his/her name.\n\n\nFor each fan, his/her name, favorite teams, favorite players, and favorite color.\n\n\n\n\nSolution", 
+            "text": "Entity Relationship Model\n\n\nLecture 2 - January 6, 2017\n\n\ndefinition:\n The \nEntity Relationship Model\n is a notation for expressing database designs.\n\n\nIn the database both \nentities\n and \nrelationships\n will be translated to \nrelations\n (tables).\n\n\nExample\n\n\nWe can represent a database for movies as follows,\n\n\n\n\nIn this diagram,\n\n\n\n\nSquares\n represent entities.\n\n\nCircles\n represent attributes.\n\n\nDiamonds\n represent relations.\n\n\nArrows\n represent a singular relations.\n\n\n\n\nSo \none\n studio \nowns\n \nmany\n movies.\n\n\nKeys\n\n\ndefinition\n: A \nkey\n is an attribute, or a set of attributes, such that no two entities have the same key.\n\n\nIn Entity-Relationship diagrams we \nunderline\n the keys,\n\n\n\n\nSurrogate Keys\n\n\ndefinition\n: A \nsurrogate key\n is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.\n\n\nRules\n\n\nAn entity set should satisfy one of the following\n\n\n\n\nIt's more then the name of something, i.e., it has a non-key attribute.\n\n\nIt's the \"many\" side in a relationship.\n\n\n\n\nExample\n\n\nGive an E/R diagram for a database recording information about teams, players, and their fans, including:\n\n\n\n\nFor each team, its name, its players, its team captain (one of its players), and the colors of its uniform.\n\n\nFor each player, his/her name.\n\n\nFor each fan, his/her name, favorite teams, favorite players, and favorite color.\n\n\n\n\nSolution\n\n\n\n\nSubclasses\n\n\ndefinition\n: Sometimes in an entity set or class you have have different types of that entity set, \nsubclasses\n.\n\n\nWeak Entity Sets\n\n\ndefinition\n: An entity set is said to be \n\"weak\"\n if we need to follow one or more \nmany-to-one\n relationships to uniquely identify the entity set.\n\n\nA \nsurrogate key\n can be used to avoid creating weak entity sets.\n\n\nExample\n\n\nFor football players \nname\n and \nnumber\n are not enough to identify them (since two players \ncould\n have the same name and the same player number), so require the teams \nname\n, related by \nplays-on\n to uniquely identify them.", 
             "title": "2 Entity Relationship Model"
         }, 
         {
@@ -72,8 +72,13 @@
         }, 
         {
             "location": "/2-Entity-Relationship-Model/#keys", 
-            "text": "definition : A  key  is an attribute, or a set of attributes, such that no two entities have the same key.  In Entity-Relationship diagrams we  underline  the keys,   A  surrogate key  is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.", 
+            "text": "definition : A  key  is an attribute, or a set of attributes, such that no two entities have the same key.  In Entity-Relationship diagrams we  underline  the keys,", 
             "title": "Keys"
+        }, 
+        {
+            "location": "/2-Entity-Relationship-Model/#surrogate-keys", 
+            "text": "definition : A  surrogate key  is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.", 
+            "title": "Surrogate Keys"
         }, 
         {
             "location": "/2-Entity-Relationship-Model/#rules", 
@@ -89,6 +94,21 @@
             "location": "/2-Entity-Relationship-Model/#solution", 
             "text": "", 
             "title": "Solution"
+        }, 
+        {
+            "location": "/2-Entity-Relationship-Model/#subclasses", 
+            "text": "definition : Sometimes in an entity set or class you have have different types of that entity set,  subclasses .", 
+            "title": "Subclasses"
+        }, 
+        {
+            "location": "/2-Entity-Relationship-Model/#weak-entity-sets", 
+            "text": "definition : An entity set is said to be  \"weak\"  if we need to follow one or more  many-to-one  relationships to uniquely identify the entity set.  A  surrogate key  can be used to avoid creating weak entity sets.", 
+            "title": "Weak Entity Sets"
+        }, 
+        {
+            "location": "/2-Entity-Relationship-Model/#example_2", 
+            "text": "For football players  name  and  number  are not enough to identify them (since two players  could  have the same name and the same player number), so require the teams  name , related by  plays-on  to uniquely identify them.", 
+            "title": "Example"
         }
     ]
 }

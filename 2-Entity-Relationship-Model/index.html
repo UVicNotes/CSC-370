@@ -213,6 +213,12 @@
               </a>
             </li>
           
+            <li class="anchor">
+              <a title="Subclasses" href="#subclasses">
+                Subclasses
+              </a>
+            </li>
+          
         </ul>
       
     
@@ -262,7 +268,8 @@
 <p><em>definition</em>: A <strong>key</strong> is an attribute, or a set of attributes, such that no two entities have the same key.</p>
 <p>In Entity-Relationship diagrams we <em>underline</em> the keys,</p>
 <p><img alt="Keys Example" src="../img/2017-01-10--10-42-50.jpg" /></p>
-<p>A <strong>surrogate key</strong> is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.</p>
+<h3 id="surrogate-keys">Surrogate Keys</h3>
+<p><em>definition</em>: A <strong>surrogate key</strong> is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.</p>
 <h3 id="rules">Rules</h3>
 <p>An entity set should satisfy one of the following</p>
 <ol>
@@ -276,8 +283,15 @@
 <li>For each player, his/her name.</li>
 <li>For each fan, his/her name, favorite teams, favorite players, and favorite color.</li>
 </ol>
-<h5 id="solution">Solution</h5>
+<h4 id="solution">Solution</h4>
 <p><img alt="Solution" src="../img/2017-01-10--11-00-39.jpg" /></p>
+<h2 id="subclasses">Subclasses</h2>
+<p><em>definition</em>: Sometimes in an entity set or class you have have different types of that entity set, <strong>subclasses</strong>.</p>
+<h3 id="weak-entity-sets">Weak Entity Sets</h3>
+<p><em>definition</em>: An entity set is said to be <strong>"weak"</strong> if we need to follow one or more <em>many-to-one</em> relationships to uniquely identify the entity set.</p>
+<p>A <a href="#surrogate-keys">surrogate key</a> can be used to avoid creating weak entity sets.</p>
+<h4 id="example_2">Example</h4>
+<p>For football players <code>name</code> and <code>number</code> are not enough to identify them (since two players <em>could</em> have the same name and the same player number), so require the teams <code>name</code>, related by <code>plays-on</code> to uniquely identify them.</p>
           <aside class="copyright" role="note">
             
             Documentation built with
