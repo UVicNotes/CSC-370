@@ -207,6 +207,12 @@
               </a>
             </li>
           
+            <li class="anchor">
+              <a title="Keys" href="#keys">
+                Keys
+              </a>
+            </li>
+          
         </ul>
       
     
@@ -252,6 +258,26 @@
 <li><strong>Arrows</strong> represent a singular relations.</li>
 </ul>
 <p>So <strong>one</strong> studio <em>owns</em> <strong>many</strong> movies.</p>
+<h2 id="keys">Keys</h2>
+<p><em>definition</em>: A <strong>key</strong> is an attribute, or a set of attributes, such that no two entities have the same key.</p>
+<p>In Entity-Relationship diagrams we <em>underline</em> the keys,</p>
+<p><img alt="Keys Example" src="../img/2017-01-10--10-42-50.jpg" /></p>
+<p>A <strong>surrogate key</strong> is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.</p>
+<h3 id="rules">Rules</h3>
+<p>An entity set should satisfy one of the following</p>
+<ol>
+<li>It's more then the name of something, i.e., it has a non-key attribute.</li>
+<li>It's the "many" side in a relationship.</li>
+</ol>
+<h4 id="example_1">Example</h4>
+<p>Give an E/R diagram for a database recording information about teams, players, and their fans, including:</p>
+<ol>
+<li>For each team, its name, its players, its team captain (one of its players), and the colors of its uniform.</li>
+<li>For each player, his/her name.</li>
+<li>For each fan, his/her name, favorite teams, favorite players, and favorite color.</li>
+</ol>
+<h5 id="solution">Solution</h5>
+<p><img alt="Solution" src="../img/2017-01-10--11-00-39.jpg" /></p>
           <aside class="copyright" role="note">
             
             Documentation built with
