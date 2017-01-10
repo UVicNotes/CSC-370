@@ -29,7 +29,9 @@ In Entity-Relationship diagrams we *underline* the keys,
 
 ![Keys Example](img/2017-01-10--10-42-50.jpg)
 
-A **surrogate key** is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.
+### Surrogate Keys
+
+_definition_: A **surrogate key** is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.
 
 ### Rules
 
@@ -43,6 +45,20 @@ An entity set should satisfy one of the following
 Give an E/R diagram for a database recording information about teams, players, and their fans, including:
 1. For each team, its name, its players, its team captain (one of its players), and the colors of its uniform.2. For each player, his/her name.3. For each fan, his/her name, favorite teams, favorite players, and favorite color.
 
-##### Solution
+#### Solution
 
 ![Solution](img/2017-01-10--11-00-39.jpg)
+
+## Subclasses
+
+_definition_: Sometimes in an entity set or class you have have different types of that entity set, **subclasses**.
+
+### Weak Entity Sets
+
+_definition_: An entity set is said to be **"weak"** if we need to follow one or more *many-to-one* relationships to uniquely identify the entity set.
+
+A [surrogate key](#surrogate-keys) can be used to avoid creating weak entity sets.
+
+#### Example
+
+For football players `name` and `number` are not enough to identify them (since two players *could* have the same name and the same player number), so require the teams `name`, related by `plays-on` to uniquely identify them.
