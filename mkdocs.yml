@@ -10,10 +10,13 @@ extra_javascript:
     - https://cdn.rawgit.com/UVicNotes/UVicNotes/81099952ba789829fab1840e5d26cb5a2bf62011/helpers/mathjax.js
 markdown_extensions:
     - mdx_math
+    - mdx_del_ins
+    - codehilite(css_class=code)
+    - admonition
 extra:
   version: 'Spring 2017'
   palette:
-    primary: 'cyan'
+    primary: 'blue'
     accent: 'orange'
   author:
     github: 'UVicNotes'

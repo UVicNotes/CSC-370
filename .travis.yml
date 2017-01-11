@@ -3,7 +3,10 @@ language: node_js
 node_js:
   - "6"
 install:
-  - sudo pip install mkdocs python-markdown-math
+  - sudo pip install mkdocs
+  - sudo pip install python-markdown-math
+  - sudo pip install git+git://github.com/aleray/mdx_del_ins.git
+  - sudo pip install pygments
   - npm install -g bower gulp
 before_script: wget https://raw.githubusercontent.com/UVicNotes/UVicNotes/master/scripts/deploy.sh
 script: bash ./deploy.sh

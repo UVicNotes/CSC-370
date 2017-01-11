@@ -1,15 +1,48 @@
+# ---------------------------------------------------------------------
+#     UVicNotes
+# ---------------------------------------------------------------------
+
 # Built files from mkdocs
 site/
 
 # Theme Directory and stuff
 NotesTheme*
-theme/
+theme*
 
 # Binary Files
 *.pdf
 *.zip
 
 # Files for working with
-Assignment-*/
+Assignment*
 Resources/
-Assignments/
+
+# ---------------------------------------------------------------------
+#     OSX
+# ---------------------------------------------------------------------
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# ---------------------------------------------------------------------
+#     Windows
+# ---------------------------------------------------------------------
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
