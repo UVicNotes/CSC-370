@@ -5,6 +5,12 @@ site_url: http://uvicnotes.github.io/CSC-370/
 repo_url: https://github.com/UVicNotes/CSC-370
 site_description: Course Notes for CSC 370 - Foundations of Computer Science
 site_author: Brynn Hawker
+pages:
+- Home: 'index.md'
+- Notes:
+    - 'Introduction': '1-Introduction.md'
+    - 'Entity/Relationship Model': '2-Entity-Relationship-Model.md'
+    - 'E/R Diagrams to Relations': '3-ER-diagrams-and-Relations.md'
 extra_javascript:
     - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     - https://cdn.rawgit.com/UVicNotes/UVicNotes/81099952ba789829fab1840e5d26cb5a2bf62011/helpers/mathjax.js
@@ -13,6 +19,7 @@ markdown_extensions:
     - mdx_del_ins
     - codehilite(css_class=code)
     - admonition
+    - smarty
 extra:
   version: 'Spring 2017'
   palette:
