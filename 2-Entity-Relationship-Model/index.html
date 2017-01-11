@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>2 Entity Relationship Model - CSC 370</title>
+        <title>Entity/Relationship Model - CSC 370</title>
       
       
         <meta name="description" content="Course Notes for CSC 370 - Foundations of Computer Science">
@@ -71,7 +71,7 @@
   
   
   
-  <body class="palette-primary-cyan palette-accent-orange">
+  <body class="palette-primary-blue palette-accent-orange">
     
       
       
@@ -95,9 +95,13 @@
         
           <span class="path">
             
+              
+                Notes <i class="icon icon-link"></i>
+              
+            
           </span>
         
-        2 Entity Relationship Model
+        Entity/Relationship Model
       </div>
     </div>
     
@@ -188,17 +192,22 @@
           
             
   <li>
-    <a class="" title="1 Introduction" href="../1-Introduction/">
-      1 Introduction
+    <span class="section">Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../1-Introduction/">
+      Introduction
     </a>
     
   </li>
 
-          
-            
+      
+        
   <li>
-    <a class="current" title="2 Entity Relationship Model" href="./">
-      2 Entity Relationship Model
+    <a class="current" title="Entity/Relationship Model" href="./">
+      Entity/Relationship Model
     </a>
     
       
@@ -230,13 +239,17 @@
     
   </li>
 
-          
-            
+      
+        
   <li>
-    <a class="" title="3 ER diagrams and Relations" href="../3-ER-diagrams-and-Relations/">
-      3 ER diagrams and Relations
+    <a class="" title="E/R Diagrams to Relations" href="../3-ER-diagrams-and-Relations/">
+      E/R Diagrams to Relations
     </a>
     
+  </li>
+
+      
+    </ul>
   </li>
 
           
@@ -281,8 +294,8 @@
 <h3 id="rules">Rules</h3>
 <p>An entity set should satisfy one of the following</p>
 <ol>
-<li>It's more then the name of something, i.e., it has a non-key attribute.</li>
-<li>It's the "many" side in a relationship.</li>
+<li>It&rsquo;s more then the name of something, i.e., it has a non-key attribute.</li>
+<li>It&rsquo;s the &ldquo;many&rdquo; side in a relationship.</li>
 </ol>
 <h4 id="example_1">Example</h4>
 <p>Give an E/R diagram for a database recording information about teams, players, and their fans, including:</p>
@@ -296,7 +309,7 @@
 <h2 id="subclasses">Subclasses</h2>
 <p><em>definition</em>: Sometimes in an entity set or class you have have different types of that entity set, <strong>subclasses</strong>.</p>
 <h3 id="weak-entity-sets">Weak Entity Sets</h3>
-<p><em>definition</em>: An entity set is said to be <strong>"weak"</strong> if we need to follow one or more <em>many-to-one</em> relationships to uniquely identify the entity set.</p>
+<p><em>definition</em>: An entity set is said to be <strong>&ldquo;weak&rdquo;</strong> if we need to follow one or more <em>many-to-one</em> relationships to uniquely identify the entity set.</p>
 <p>A <a href="#surrogate-keys">surrogate key</a> can be used to avoid creating weak entity sets.</p>
 <h4 id="example_2">Example</h4>
 <p>For football players <code>name</code> and <code>number</code> are not enough to identify them (since two players <em>could</em> have the same name and the same player number), so require the teams <code>name</code>, related by <code>plays-on</code> to uniquely identify them.</p>
@@ -316,7 +329,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../1-Introduction/" title="1 Introduction">
+        <a href="../1-Introduction/" title="Introduction">
           <span class="direction">
             Previous
           </span>
@@ -326,7 +339,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                1 Introduction
+                Introduction
               </div>
             </div>
           </div>
@@ -335,14 +348,14 @@
     </div>
     <div class="next">
       
-        <a href="../3-ER-diagrams-and-Relations/" title="3 ER diagrams and Relations">
+        <a href="../3-ER-diagrams-and-Relations/" title="E/R Diagrams to Relations">
           <span class="direction">
             Next
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                3 ER diagrams and Relations
+                E/R Diagrams to Relations
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">

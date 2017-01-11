@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>1 Introduction - CSC 370</title>
+        <title>Introduction - CSC 370</title>
       
       
         <meta name="description" content="Course Notes for CSC 370 - Foundations of Computer Science">
@@ -71,7 +71,7 @@
   
   
   
-  <body class="palette-primary-cyan palette-accent-orange">
+  <body class="palette-primary-blue palette-accent-orange">
     
       
       
@@ -95,9 +95,13 @@
         
           <span class="path">
             
+              
+                Notes <i class="icon icon-link"></i>
+              
+            
           </span>
         
-        1 Introduction
+        Introduction
       </div>
     </div>
     
@@ -188,8 +192,13 @@
           
             
   <li>
-    <a class="current" title="1 Introduction" href="./">
-      1 Introduction
+    <span class="section">Notes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="current" title="Introduction" href="./">
+      Introduction
     </a>
     
       
@@ -215,22 +224,26 @@
     
   </li>
 
-          
-            
+      
+        
   <li>
-    <a class="" title="2 Entity Relationship Model" href="../2-Entity-Relationship-Model/">
-      2 Entity Relationship Model
+    <a class="" title="Entity/Relationship Model" href="../2-Entity-Relationship-Model/">
+      Entity/Relationship Model
     </a>
     
   </li>
 
-          
-            
+      
+        
   <li>
-    <a class="" title="3 ER diagrams and Relations" href="../3-ER-diagrams-and-Relations/">
-      3 ER diagrams and Relations
+    <a class="" title="E/R Diagrams to Relations" href="../3-ER-diagrams-and-Relations/">
+      E/R Diagrams to Relations
     </a>
     
+  </li>
+
+      
+    </ul>
   </li>
 
           
@@ -293,27 +306,28 @@
 <td align="center"><code>checking</code></td>
 </tr>
 <tr>
-<td align="center">...</td>
-<td align="center">...</td>
-<td align="center">...</td>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
 </tr>
 </tbody>
 </table>
 <ol>
 <li>What’s the balance of account “67890”?</li>
 </ol>
-<pre><code class="sql">SELECT balance
-FROM Accounts
-WHERE accountNo = 67890;
-</code></pre>
+<div class="code"><pre><span></span><span class="k">SELECT</span> <span class="n">balance</span>
+<span class="k">FROM</span> <span class="n">Accounts</span>
+<span class="k">WHERE</span> <span class="n">accountNo</span> <span class="o">=</span> <span class="mi">67890</span><span class="p">;</span>
+</pre></div>
+
 
 <ol>
 <li>Which are the savings accounts with negative balances?</li>
 </ol>
-<pre><code class="sql">SELECT accountNo
-FROM Accounts
-WHERE type = ‘savings’ AND balance &lt; 0;
-</code></pre>
+<div class="code"><pre><span></span><span class="k">SELECT</span> <span class="n">accountNo</span>
+<span class="k">FROM</span> <span class="n">Accounts</span>
+<span class="k">WHERE</span> <span class="k">type</span> <span class="o">=</span> <span class="err">‘</span><span class="n">savings</span><span class="err">’</span> <span class="k">AND</span> <span class="n">balance</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">;</span>
+</pre></div>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -349,14 +363,14 @@ WHERE type = ‘savings’ AND balance &lt; 0;
     </div>
     <div class="next">
       
-        <a href="../2-Entity-Relationship-Model/" title="2 Entity Relationship Model">
+        <a href="../2-Entity-Relationship-Model/" title="Entity/Relationship Model">
           <span class="direction">
             Next
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                2 Entity Relationship Model
+                Entity/Relationship Model
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">

@@ -32,8 +32,8 @@
         }, 
         {
             "location": "/1-Introduction/", 
-            "text": "Introduction\n\n\nLecture 1 - January 4, 2017\n\n\nWhat is a database?\n\n\ndefinition:\n A \ndatabase\n is a collection of information that exists over a long period of time.\n\n\nA \nDatabase Management System (DBMS)\n a complex system for managing database interactions.\n\n\n\n\nAllows users to \neasily\n create new databases and specify schema.\n\n\nEnables users for \nsearch\n and \nmodify\n data.\n\n\nStores data \nintelligently\n,\n\n\nProtects from accidental use\n\n\nAllows efficient access, e.g., indexing\n\n\n\n\n\n\nManages \ncuncurrent\n data accesses and modifications.\n\n\nRecovers from failures and crashes.\n\n\n\n\nRelational Databases\n\n\nA database system should present the user with a view of the data organized as \ntables\n (or \nrelations\n).\n\n\nSo \nRelations\n are represented as \nTables\n, column headers are \nattribute names\n. Each row is a \ntuple\n.\n\n\nAccess with \nStructured Query Language (SQL)\n.\n\n\ne.g.\n\n\nGiven the database\n\n\n\n\n\n\n\n\naccountNo\n\n\nbalance\n\n\ntype\n\n\n\n\n\n\n\n\n\n\n12345\n\n\n1000.00\n\n\nsavings\n\n\n\n\n\n\n67890\n\n\n2846.92\n\n\nchecking\n\n\n\n\n\n\n...\n\n\n...\n\n\n...\n\n\n\n\n\n\n\n\n\n\nWhat\u2019s the balance of account \u201c67890\u201d?\n\n\n\n\nSELECT balance\nFROM Accounts\nWHERE accountNo = 67890;\n\n\n\n\n\n\nWhich are the savings accounts with negative balances?\n\n\n\n\nSELECT accountNo\nFROM Accounts\nWHERE type = \u2018savings\u2019 AND balance \n 0;", 
-            "title": "1 Introduction"
+            "text": "Introduction\n\n\nLecture 1 - January 4, 2017\n\n\nWhat is a database?\n\n\ndefinition:\n A \ndatabase\n is a collection of information that exists over a long period of time.\n\n\nA \nDatabase Management System (DBMS)\n a complex system for managing database interactions.\n\n\n\n\nAllows users to \neasily\n create new databases and specify schema.\n\n\nEnables users for \nsearch\n and \nmodify\n data.\n\n\nStores data \nintelligently\n,\n\n\nProtects from accidental use\n\n\nAllows efficient access, e.g., indexing\n\n\n\n\n\n\nManages \ncuncurrent\n data accesses and modifications.\n\n\nRecovers from failures and crashes.\n\n\n\n\nRelational Databases\n\n\nA database system should present the user with a view of the data organized as \ntables\n (or \nrelations\n).\n\n\nSo \nRelations\n are represented as \nTables\n, column headers are \nattribute names\n. Each row is a \ntuple\n.\n\n\nAccess with \nStructured Query Language (SQL)\n.\n\n\ne.g.\n\n\nGiven the database\n\n\n\n\n\n\n\n\naccountNo\n\n\nbalance\n\n\ntype\n\n\n\n\n\n\n\n\n\n\n12345\n\n\n1000.00\n\n\nsavings\n\n\n\n\n\n\n67890\n\n\n2846.92\n\n\nchecking\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat\u2019s the balance of account \u201c67890\u201d?\n\n\n\n\nSELECT\n \nbalance\n\n\nFROM\n \nAccounts\n\n\nWHERE\n \naccountNo\n \n=\n \n67890\n;\n\n\n\n\n\n\n\n\nWhich are the savings accounts with negative balances?\n\n\n\n\nSELECT\n \naccountNo\n\n\nFROM\n \nAccounts\n\n\nWHERE\n \ntype\n \n=\n \n\u2018\nsavings\n\u2019\n \nAND\n \nbalance\n \n \n0\n;", 
+            "title": "Introduction"
         }, 
         {
             "location": "/1-Introduction/#introduction", 
@@ -52,13 +52,13 @@
         }, 
         {
             "location": "/1-Introduction/#eg", 
-            "text": "Given the database     accountNo  balance  type      12345  1000.00  savings    67890  2846.92  checking    ...  ...  ...      What\u2019s the balance of account \u201c67890\u201d?   SELECT balance\nFROM Accounts\nWHERE accountNo = 67890;   Which are the savings accounts with negative balances?   SELECT accountNo\nFROM Accounts\nWHERE type = \u2018savings\u2019 AND balance   0;", 
+            "text": "Given the database     accountNo  balance  type      12345  1000.00  savings    67890  2846.92  checking           What\u2019s the balance of account \u201c67890\u201d?   SELECT   balance  FROM   Accounts  WHERE   accountNo   =   67890 ;    Which are the savings accounts with negative balances?   SELECT   accountNo  FROM   Accounts  WHERE   type   =   \u2018 savings \u2019   AND   balance     0 ;", 
             "title": "e.g."
         }, 
         {
             "location": "/2-Entity-Relationship-Model/", 
-            "text": "Entity Relationship Model\n\n\nLecture 2 - January 6, 2017\n\n\ndefinition:\n The \nEntity Relationship Model\n is a notation for expressing database designs.\n\n\nIn the database both \nentities\n and \nrelationships\n will be translated to \nrelations\n (tables).\n\n\nExample\n\n\nWe can represent a database for movies as follows,\n\n\n\n\nIn this diagram,\n\n\n\n\nSquares\n represent entities.\n\n\nCircles\n represent attributes.\n\n\nDiamonds\n represent relations.\n\n\nArrows\n represent a singular relations.\n\n\n\n\nSo \none\n studio \nowns\n \nmany\n movies.\n\n\nKeys\n\n\ndefinition\n: A \nkey\n is an attribute, or a set of attributes, such that no two entities have the same key.\n\n\nIn Entity-Relationship diagrams we \nunderline\n the keys,\n\n\n\n\nSurrogate Keys\n\n\ndefinition\n: A \nsurrogate key\n is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.\n\n\nRules\n\n\nAn entity set should satisfy one of the following\n\n\n\n\nIt's more then the name of something, i.e., it has a non-key attribute.\n\n\nIt's the \"many\" side in a relationship.\n\n\n\n\nExample\n\n\nGive an E/R diagram for a database recording information about teams, players, and their fans, including:\n\n\n\n\nFor each team, its name, its players, its team captain (one of its players), and the colors of its uniform.\n\n\nFor each player, his/her name.\n\n\nFor each fan, his/her name, favorite teams, favorite players, and favorite color.\n\n\n\n\nSolution\n\n\n\n\nSubclasses\n\n\ndefinition\n: Sometimes in an entity set or class you have have different types of that entity set, \nsubclasses\n.\n\n\nWeak Entity Sets\n\n\ndefinition\n: An entity set is said to be \n\"weak\"\n if we need to follow one or more \nmany-to-one\n relationships to uniquely identify the entity set.\n\n\nA \nsurrogate key\n can be used to avoid creating weak entity sets.\n\n\nExample\n\n\nFor football players \nname\n and \nnumber\n are not enough to identify them (since two players \ncould\n have the same name and the same player number), so require the teams \nname\n, related by \nplays-on\n to uniquely identify them.", 
-            "title": "2 Entity Relationship Model"
+            "text": "Entity Relationship Model\n\n\nLecture 2 - January 6, 2017\n\n\ndefinition:\n The \nEntity Relationship Model\n is a notation for expressing database designs.\n\n\nIn the database both \nentities\n and \nrelationships\n will be translated to \nrelations\n (tables).\n\n\nExample\n\n\nWe can represent a database for movies as follows,\n\n\n\n\nIn this diagram,\n\n\n\n\nSquares\n represent entities.\n\n\nCircles\n represent attributes.\n\n\nDiamonds\n represent relations.\n\n\nArrows\n represent a singular relations.\n\n\n\n\nSo \none\n studio \nowns\n \nmany\n movies.\n\n\nKeys\n\n\ndefinition\n: A \nkey\n is an attribute, or a set of attributes, such that no two entities have the same key.\n\n\nIn Entity-Relationship diagrams we \nunderline\n the keys,\n\n\n\n\nSurrogate Keys\n\n\ndefinition\n: A \nsurrogate key\n is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.\n\n\nRules\n\n\nAn entity set should satisfy one of the following\n\n\n\n\nIt\ns more then the name of something, i.e., it has a non-key attribute.\n\n\nIt\ns the \nmany\n side in a relationship.\n\n\n\n\nExample\n\n\nGive an E/R diagram for a database recording information about teams, players, and their fans, including:\n\n\n\n\nFor each team, its name, its players, its team captain (one of its players), and the colors of its uniform.\n\n\nFor each player, his/her name.\n\n\nFor each fan, his/her name, favorite teams, favorite players, and favorite color.\n\n\n\n\nSolution\n\n\n\n\nSubclasses\n\n\ndefinition\n: Sometimes in an entity set or class you have have different types of that entity set, \nsubclasses\n.\n\n\nWeak Entity Sets\n\n\ndefinition\n: An entity set is said to be \nweak\n if we need to follow one or more \nmany-to-one\n relationships to uniquely identify the entity set.\n\n\nA \nsurrogate key\n can be used to avoid creating weak entity sets.\n\n\nExample\n\n\nFor football players \nname\n and \nnumber\n are not enough to identify them (since two players \ncould\n have the same name and the same player number), so require the teams \nname\n, related by \nplays-on\n to uniquely identify them.", 
+            "title": "Entity/Relationship Model"
         }, 
         {
             "location": "/2-Entity-Relationship-Model/#entity-relationship-model", 
@@ -82,7 +82,7 @@
         }, 
         {
             "location": "/2-Entity-Relationship-Model/#rules", 
-            "text": "An entity set should satisfy one of the following   It's more then the name of something, i.e., it has a non-key attribute.  It's the \"many\" side in a relationship.", 
+            "text": "An entity set should satisfy one of the following   It s more then the name of something, i.e., it has a non-key attribute.  It s the  many  side in a relationship.", 
             "title": "Rules"
         }, 
         {
@@ -102,7 +102,7 @@
         }, 
         {
             "location": "/2-Entity-Relationship-Model/#weak-entity-sets", 
-            "text": "definition : An entity set is said to be  \"weak\"  if we need to follow one or more  many-to-one  relationships to uniquely identify the entity set.  A  surrogate key  can be used to avoid creating weak entity sets.", 
+            "text": "definition : An entity set is said to be  weak  if we need to follow one or more  many-to-one  relationships to uniquely identify the entity set.  A  surrogate key  can be used to avoid creating weak entity sets.", 
             "title": "Weak Entity Sets"
         }, 
         {
@@ -112,8 +112,8 @@
         }, 
         {
             "location": "/3-ER-diagrams-and-Relations/", 
-            "text": "E/R Diagrams to Relations\n\n\nTable Terminology\n\n\nIn a table\n\n\n\n\nHeadings\n are \nattribute names\n.\n\n\nRows\n are \ntuples\n.\n\n\nElements\n in rows are tuple components\n\n\n\n\nEntity Sets to Relations\n\n\nExample\n\n\n\n\nThe tables are,\n\n\n\n\nMovies\n: (\ntitle\n, \nyear\n, \nlength\n, \nfilmType\n, \nstudioName\n) \n\n\nStudios\n: (\nname\n, \naddress\n)\n\n\nStars\n: (\nname\n, \naddress\n)\n\n\nStarsIn\n: (\ntitle\n, \nyear\n, \nstarName\n)\n\n\n\n\nThe \nmovies\n table would look like,\n\n\n\n\n\n\n\n\ntitle\n\n\nyear\n\n\nlength\n\n\nfilmType\n\n\nstudioName\n\n\n\n\n\n\n\n\n\n\nGodzilla\n\n\n2014\n\n\n200\n\n\nfeature\n\n\nFox\n\n\n\n\n\n\n...\n\n\n...\n\n\n...\n\n\n...\n\n\n...", 
-            "title": "3 ER diagrams and Relations"
+            "text": "E/R Diagrams to Relations\n\n\nTable Terminology\n\n\nIn a table\n\n\n\n\nHeadings\n are \nattribute names\n.\n\n\nRows\n are \ntuples\n.\n\n\nElements\n in rows are tuple components\n\n\n\n\nEntity Sets to Relations\n\n\nExample\n\n\n\n\nThe tables are,\n\n\n\n\nMovies\n: (\ntitle\n, \nyear\n, \nlength\n, \nfilmType\n, \nstudioName\n) \n\n\nStudios\n: (\nname\n, \naddress\n)\n\n\nStars\n: (\nname\n, \naddress\n)\n\n\nStarsIn\n: (\ntitle\n, \nyear\n, \nstarName\n)\n\n\n\n\nThe \nmovies\n table would look like,\n\n\n\n\n\n\n\n\ntitle\n\n\nyear\n\n\nlength\n\n\nfilmType\n\n\nstudioName\n\n\n\n\n\n\n\n\n\n\nGodzilla\n\n\n2014\n\n\n200\n\n\nfeature\n\n\nFox", 
+            "title": "E/R Diagrams to Relations"
         }, 
         {
             "location": "/3-ER-diagrams-and-Relations/#er-diagrams-to-relations", 
@@ -132,7 +132,7 @@
         }, 
         {
             "location": "/3-ER-diagrams-and-Relations/#example", 
-            "text": "The tables are,   Movies : ( title ,  year ,  length ,  filmType ,  studioName )   Studios : ( name ,  address )  Stars : ( name ,  address )  StarsIn : ( title ,  year ,  starName )   The  movies  table would look like,     title  year  length  filmType  studioName      Godzilla  2014  200  feature  Fox    ...  ...  ...  ...  ...", 
+            "text": "The tables are,   Movies : ( title ,  year ,  length ,  filmType ,  studioName )   Studios : ( name ,  address )  Stars : ( name ,  address )  StarsIn : ( title ,  year ,  starName )   The  movies  table would look like,     title  year  length  filmType  studioName      Godzilla  2014  200  feature  Fox", 
             "title": "Example"
         }
     ]
