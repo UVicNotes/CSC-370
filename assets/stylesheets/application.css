@@ -560,7 +560,7 @@ a {
  * Device specific background hacks related to rubberband
  */
 body {
-  color: rgba(0, 0, 0, 0.87);
+  color: #424242;
   /* Hack [Chrome, Opera]: Set background color in Chrome and Opera */
   /*
    * Don't tint menu bar on iOS
@@ -925,27 +925,18 @@ hr {
  * Default font styles
  */
 body, input {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   /* Enable font-smoothing in Webkit and FF */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*
-   * Use system fonts, if browser doesn't support webfonts
-   */ }
-  .no-fontface body, .no-fontface input {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  -moz-osx-font-smoothing: grayscale; }
 
 /*
  * Proportional fonts
  */
 pre, code, kbd {
-  font-family: 'Courier New', 'Courier', monospace;
-  /*
-   * Use system fonts, if browser doesn't support webfonts
-   */ }
-  .no-fontface pre, .no-fontface code, .no-fontface kbd {
-    font-family: 'Courier New', 'Courier', monospace; }
+  font-family: 'Monaco', 'Consolas', 'Courier New', 'Courier', monospace;
+  font-size: 90%; }
 
 /*
  * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
@@ -1098,13 +1089,19 @@ pre, code, kbd {
    */
   /*
    * Scale logo on hover
+   */
+  /*
+   * Color link on hover
    */ }
   .ios.standalone .project:before {
     background: rgba(0, 0, 0, 0.12); }
-  .project:hover .logo svg,
-  .project:focus .logo svg {
+  .project .logo:hover svg,
+  .project .logo:focus svg {
     -webkit-filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.4));
             filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.4)); }
+  .project a:hover,
+  .project a:focus {
+    color: #e84e40; }
 
 /*
  * Repository buttons
@@ -1264,7 +1261,6 @@ pre, code, kbd {
   .project .logo {
     display: table-cell;
     width: 64px;
-    padding-right: 12px;
     /*
      * Project logo image
      */ }
@@ -1276,9 +1272,11 @@ pre, code, kbd {
     display: table-cell;
     padding-left: 4px;
     font-size: 14px;
-    line-height: 1.25em;
+    line-height: 1.5em;
     vertical-align: middle;
     /* [tablet portait+]: Slightly larger project name */ }
+    .project .name a {
+      color: #757575; }
   .project .logo + .name {
     font-size: 12px; }
 
@@ -1491,7 +1489,7 @@ pre span {
    * Differing top and bottom rubberband backgrounds in iOS web application
    */
   /*
-   * Headlines, chapters, links and inline code
+   * Links
    */
   /*
    * Inline code
@@ -1524,7 +1522,7 @@ pre span {
     .ios.standalone .article .wrapper {
       background: -webkit-linear-gradient(top, white 50%, white 50%);
       background: linear-gradient(to bottom, white 50%, white 50%); }
-  .article h1, .article h2, .article a {
+  .article a {
     color: #e84e40; }
   .article p code, .article table code {
     background: #eee; }
@@ -1599,7 +1597,6 @@ pre span {
  * Admonition support
  */
 .admonition {
-  background: #29b6f6;
   color: white;
   /*
    * Embedded code blocks
@@ -1673,13 +1670,13 @@ pre span {
    * Paragraphs and section titles
    */
   /*
+   * Lists
+   */
+  /*
    * Smaler top spacing for nested lists
    */
   /*
    * List elements
-   */
-  /*
-   * Add icon for elements of an unordered list
    */
   /*
    * Inline code snippets must not wrap
@@ -1766,25 +1763,21 @@ pre span {
       display: none; }
   .article p, .article ul, .article ol {
     margin-top: 1.5em; }
+  .article ul {
+    list-style: disc; }
   .article li ul, .article li ol {
-    margin-top: 0.75em; }
+    margin-top: 0.2em;
+    list-style: circle; }
+    .article li ul li, .article li ol li {
+      margin-top: 0.4em; }
   .article li {
-    margin-top: 0.75em;
+    margin-top: 0.6em;
     margin-left: 18px;
     /*
      * Inline paragraphs in list elements
      */ }
     .article li p {
       display: inline; }
-  .article ul > li:before {
-    content: "\e602";
-    display: block;
-    float: left;
-    font-family: 'Icon';
-    font-size: 16px;
-    width: 1.2em;
-    margin-left: -1.2em;
-    vertical-align: -0.1em; }
   .article p code, .article table code {
     white-space: nowrap;
     padding: 2px 4px;

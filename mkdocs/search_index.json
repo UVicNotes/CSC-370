@@ -109,6 +109,31 @@
             "location": "/2-Entity-Relationship-Model/#example_2", 
             "text": "For football players  name  and  number  are not enough to identify them (since two players  could  have the same name and the same player number), so require the teams  name , related by  plays-on  to uniquely identify them.", 
             "title": "Example"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/", 
+            "text": "E/R Diagrams to Relations\n\n\nTable Terminology\n\n\nIn a table\n\n\n\n\nHeadings\n are \nattribute names\n.\n\n\nRows\n are \ntuples\n.\n\n\nElements\n in rows are tuple components\n\n\n\n\nEntity Sets to Relations\n\n\nExample\n\n\n\n\nThe tables are,\n\n\n\n\nMovies\n: (\ntitle\n, \nyear\n, \nlength\n, \nfilmType\n, \nstudioName\n) \n\n\nStudios\n: (\nname\n, \naddress\n)\n\n\nStars\n: (\nname\n, \naddress\n)\n\n\nStarsIn\n: (\ntitle\n, \nyear\n, \nstarName\n)\n\n\n\n\nThe \nmovies\n table would look like,\n\n\n\n\n\n\n\n\ntitle\n\n\nyear\n\n\nlength\n\n\nfilmType\n\n\nstudioName\n\n\n\n\n\n\n\n\n\n\nGodzilla\n\n\n2014\n\n\n200\n\n\nfeature\n\n\nFox\n\n\n\n\n\n\n...\n\n\n...\n\n\n...\n\n\n...\n\n\n...", 
+            "title": "3 ER diagrams and Relations"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/#er-diagrams-to-relations", 
+            "text": "", 
+            "title": "E/R Diagrams to Relations"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/#table-terminology", 
+            "text": "In a table   Headings  are  attribute names .  Rows  are  tuples .  Elements  in rows are tuple components", 
+            "title": "Table Terminology"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/#entity-sets-to-relations", 
+            "text": "", 
+            "title": "Entity Sets to Relations"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/#example", 
+            "text": "The tables are,   Movies : ( title ,  year ,  length ,  filmType ,  studioName )   Studios : ( name ,  address )  Stars : ( name ,  address )  StarsIn : ( title ,  year ,  starName )   The  movies  table would look like,     title  year  length  filmType  studioName      Godzilla  2014  200  feature  Fox    ...  ...  ...  ...  ...", 
+            "title": "Example"
         }
     ]
 }

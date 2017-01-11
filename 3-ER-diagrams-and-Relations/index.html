@@ -9,21 +9,21 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>2 Entity Relationship Model - CSC 370</title>
+        <title>3 ER diagrams and Relations - CSC 370</title>
       
       
         <meta name="description" content="Course Notes for CSC 370 - Foundations of Computer Science">
       
       
-        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/2-Entity-Relationship-Model/">
+        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/3-ER-diagrams-and-Relations/">
       
       
         <meta name="author" content="Brynn Hawker">
       
     
-    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/2-Entity-Relationship-Model/">
+    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/3-ER-diagrams-and-Relations/">
     <meta property="og:title" content="CSC 370">
-    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370/2-Entity-Relationship-Model//../">
+    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370/3-ER-diagrams-and-Relations//../">
     <meta name="apple-mobile-web-app-title" content="CSC 370">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -97,7 +97,7 @@
             
           </span>
         
-        2 Entity Relationship Model
+        3 ER diagrams and Relations
       </div>
     </div>
     
@@ -197,8 +197,17 @@
           
             
   <li>
-    <a class="current" title="2 Entity Relationship Model" href="./">
+    <a class="" title="2 Entity Relationship Model" href="../2-Entity-Relationship-Model/">
       2 Entity Relationship Model
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="3 ER diagrams and Relations" href="./">
+      3 ER diagrams and Relations
     </a>
     
       
@@ -208,34 +217,19 @@
         <ul>
           
             <li class="anchor">
-              <a title="Example" href="#example">
-                Example
+              <a title="Table Terminology" href="#table-terminology">
+                Table Terminology
               </a>
             </li>
           
             <li class="anchor">
-              <a title="Keys" href="#keys">
-                Keys
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Subclasses" href="#subclasses">
-                Subclasses
+              <a title="Entity Sets to Relations" href="#entity-sets-to-relations">
+                Entity Sets to Relations
               </a>
             </li>
           
         </ul>
       
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="" title="3 ER diagrams and Relations" href="../3-ER-diagrams-and-Relations/">
-      3 ER diagrams and Relations
-    </a>
     
   </li>
 
@@ -257,49 +251,52 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="entity-relationship-model">Entity Relationship Model</h1>
-<p><strong>Lecture 2 - January 6, 2017</strong></p>
-<p><em>definition:</em> The <strong>Entity Relationship Model</strong> is a notation for expressing database designs.</p>
-<p>In the database both <em>entities</em> and <em>relationships</em> will be translated to <em>relations</em> (tables).</p>
-<h4 id="example">Example</h4>
-<p>We can represent a database for movies as follows,</p>
-<p><img alt="" src="../img/Relational-Diagram.svg" /></p>
-<p>In this diagram,</p>
+          <h1 id="er-diagrams-to-relations">E/R Diagrams to Relations</h1>
+<h2 id="table-terminology">Table Terminology</h2>
+<p>In a table</p>
 <ul>
-<li><strong>Squares</strong> represent entities.</li>
-<li><strong>Circles</strong> represent attributes.</li>
-<li><strong>Diamonds</strong> represent relations.</li>
-<li><strong>Arrows</strong> represent a singular relations.</li>
+<li><em>Headings</em> are <strong>attribute names</strong>.</li>
+<li><em>Rows</em> are <strong>tuples</strong>.</li>
+<li><em>Elements</em> in rows are tuple components</li>
 </ul>
-<p>So <strong>one</strong> studio <em>owns</em> <strong>many</strong> movies.</p>
-<h2 id="keys">Keys</h2>
-<p><em>definition</em>: A <strong>key</strong> is an attribute, or a set of attributes, such that no two entities have the same key.</p>
-<p>In Entity-Relationship diagrams we <em>underline</em> the keys,</p>
-<p><img alt="Keys Example" src="../img/2017-01-10--10-42-50.jpg" /></p>
-<h3 id="surrogate-keys">Surrogate Keys</h3>
-<p><em>definition</em>: A <strong>surrogate key</strong> is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.</p>
-<h3 id="rules">Rules</h3>
-<p>An entity set should satisfy one of the following</p>
-<ol>
-<li>It's more then the name of something, i.e., it has a non-key attribute.</li>
-<li>It's the "many" side in a relationship.</li>
-</ol>
-<h4 id="example_1">Example</h4>
-<p>Give an E/R diagram for a database recording information about teams, players, and their fans, including:</p>
-<ol>
-<li>For each team, its name, its players, its team captain (one of its players), and the colors of its uniform.</li>
-<li>For each player, his/her name.</li>
-<li>For each fan, his/her name, favorite teams, favorite players, and favorite color.</li>
-</ol>
-<h4 id="solution">Solution</h4>
-<p><img alt="Solution" src="../img/2017-01-10--11-00-39.jpg" /></p>
-<h2 id="subclasses">Subclasses</h2>
-<p><em>definition</em>: Sometimes in an entity set or class you have have different types of that entity set, <strong>subclasses</strong>.</p>
-<h3 id="weak-entity-sets">Weak Entity Sets</h3>
-<p><em>definition</em>: An entity set is said to be <strong>"weak"</strong> if we need to follow one or more <em>many-to-one</em> relationships to uniquely identify the entity set.</p>
-<p>A <a href="#surrogate-keys">surrogate key</a> can be used to avoid creating weak entity sets.</p>
-<h4 id="example_2">Example</h4>
-<p>For football players <code>name</code> and <code>number</code> are not enough to identify them (since two players <em>could</em> have the same name and the same player number), so require the teams <code>name</code>, related by <code>plays-on</code> to uniquely identify them.</p>
+<h2 id="entity-sets-to-relations">Entity Sets to Relations</h2>
+<h4 id="example">Example</h4>
+<p><img alt="Diagram" src="../img/Relational-Diagram.svg" /></p>
+<p>The tables are,</p>
+<ul>
+<li><code>Movies</code>: (<em><code>title</code></em>, <code>year</code>, <code>length</code>, <code>filmType</code>, <code>studioName</code>) </li>
+<li><code>Studios</code>: (<em><code>name</code></em>, <code>address</code>)</li>
+<li><code>Stars</code>: (<em><code>name</code></em>, <code>address</code>)</li>
+<li><code>StarsIn</code>: (<em><code>title</code></em>, <code>year</code>, <code>starName</code>)</li>
+</ul>
+<p>The <code>movies</code> table would look like,</p>
+<table>
+<thead>
+<tr>
+<th align="center"><code>title</code></th>
+<th align="center"><code>year</code></th>
+<th align="center"><code>length</code></th>
+<th align="center"><code>filmType</code></th>
+<th align="center"><code>studioName</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>Godzilla</code></td>
+<td align="center"><code>2014</code></td>
+<td align="center"><code>200</code></td>
+<td align="center"><code>feature</code></td>
+<td align="center"><code>Fox</code></td>
+</tr>
+<tr>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+</tr>
+</tbody>
+</table>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -316,7 +313,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../1-Introduction/" title="1 Introduction">
+        <a href="../2-Entity-Relationship-Model/" title="2 Entity Relationship Model">
           <span class="direction">
             Previous
           </span>
@@ -326,7 +323,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                1 Introduction
+                2 Entity Relationship Model
               </div>
             </div>
           </div>
@@ -334,22 +331,6 @@
       
     </div>
     <div class="next">
-      
-        <a href="../3-ER-diagrams-and-Relations/" title="3 ER diagrams and Relations">
-          <span class="direction">
-            Next
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                3 ER diagrams and Relations
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>

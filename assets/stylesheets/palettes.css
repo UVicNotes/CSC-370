@@ -140,7 +140,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-red {
       background: #e84e40; } }
@@ -170,35 +173,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-red .project .logo svg .primary {
       fill: #e84e40; }
     .palette-primary-red .project .logo svg .mark {
       fill: white; }
+    .palette-primary-red .project a:hover,
+    .palette-primary-red .project a:focus {
+      color: #e84e40; }
   .palette-primary-red .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-red .article a {
+      color: #e84e40; }
     .ios.standalone .palette-primary-red .article {
       background: -webkit-linear-gradient(top, white 50%, #e84e40 50%);
       background: linear-gradient(to bottom, white 50%, #e84e40 50%); }
-    .palette-primary-red .article h1, .palette-primary-red .article h2, .palette-primary-red .article a, .palette-primary-red .article code {
-      color: #e84e40; }
     .palette-primary-red .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-red .article table th {
       background: #ee7a70; }
+    .palette-primary-red .article .MathJax, .palette-primary-red .article .MathJax .mi {
+      color: #e84e40; }
   .palette-primary-red .results .meta {
     background: #e84e40; }
+  .palette-primary-red .admonition {
+    background-color: #e84e40; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -219,7 +235,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-pink {
       background: #e91e63; } }
@@ -249,35 +268,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-pink .project .logo svg .primary {
       fill: #e91e63; }
     .palette-primary-pink .project .logo svg .mark {
       fill: white; }
+    .palette-primary-pink .project a:hover,
+    .palette-primary-pink .project a:focus {
+      color: #e91e63; }
   .palette-primary-pink .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-pink .article a {
+      color: #e91e63; }
     .ios.standalone .palette-primary-pink .article {
       background: -webkit-linear-gradient(top, white 50%, #e91e63 50%);
       background: linear-gradient(to bottom, white 50%, #e91e63 50%); }
-    .palette-primary-pink .article h1, .palette-primary-pink .article h2, .palette-primary-pink .article a, .palette-primary-pink .article code {
-      color: #e91e63; }
     .palette-primary-pink .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-pink .article table th {
       background: #ef568a; }
+    .palette-primary-pink .article .MathJax, .palette-primary-pink .article .MathJax .mi {
+      color: #e91e63; }
   .palette-primary-pink .results .meta {
     background: #e91e63; }
+  .palette-primary-pink .admonition {
+    background-color: #e91e63; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -298,7 +330,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-purple {
       background: #ab47bc; } }
@@ -328,35 +363,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-purple .project .logo svg .primary {
       fill: #ab47bc; }
     .palette-primary-purple .project .logo svg .mark {
       fill: white; }
+    .palette-primary-purple .project a:hover,
+    .palette-primary-purple .project a:focus {
+      color: #ab47bc; }
   .palette-primary-purple .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-purple .article a {
+      color: #ab47bc; }
     .ios.standalone .palette-primary-purple .article {
       background: -webkit-linear-gradient(top, white 50%, #ab47bc 50%);
       background: linear-gradient(to bottom, white 50%, #ab47bc 50%); }
-    .palette-primary-purple .article h1, .palette-primary-purple .article h2, .palette-primary-purple .article a, .palette-primary-purple .article code {
-      color: #ab47bc; }
     .palette-primary-purple .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-purple .article table th {
       background: #c075cd; }
+    .palette-primary-purple .article .MathJax, .palette-primary-purple .article .MathJax .mi {
+      color: #ab47bc; }
   .palette-primary-purple .results .meta {
     background: #ab47bc; }
+  .palette-primary-purple .admonition {
+    background-color: #ab47bc; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -377,7 +425,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-deep-purple {
       background: #7e57c2; } }
@@ -407,35 +458,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-deep-purple .project .logo svg .primary {
       fill: #7e57c2; }
     .palette-primary-deep-purple .project .logo svg .mark {
       fill: white; }
+    .palette-primary-deep-purple .project a:hover,
+    .palette-primary-deep-purple .project a:focus {
+      color: #7e57c2; }
   .palette-primary-deep-purple .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-deep-purple .article a {
+      color: #7e57c2; }
     .ios.standalone .palette-primary-deep-purple .article {
       background: -webkit-linear-gradient(top, white 50%, #7e57c2 50%);
       background: linear-gradient(to bottom, white 50%, #7e57c2 50%); }
-    .palette-primary-deep-purple .article h1, .palette-primary-deep-purple .article h2, .palette-primary-deep-purple .article a, .palette-primary-deep-purple .article code {
-      color: #7e57c2; }
     .palette-primary-deep-purple .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-deep-purple .article table th {
       background: #9e81d1; }
+    .palette-primary-deep-purple .article .MathJax, .palette-primary-deep-purple .article .MathJax .mi {
+      color: #7e57c2; }
   .palette-primary-deep-purple .results .meta {
     background: #7e57c2; }
+  .palette-primary-deep-purple .admonition {
+    background-color: #7e57c2; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -456,7 +520,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-indigo {
       background: #3f51b5; } }
@@ -486,35 +553,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-indigo .project .logo svg .primary {
       fill: #3f51b5; }
     .palette-primary-indigo .project .logo svg .mark {
       fill: white; }
+    .palette-primary-indigo .project a:hover,
+    .palette-primary-indigo .project a:focus {
+      color: #3f51b5; }
   .palette-primary-indigo .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-indigo .article a {
+      color: #3f51b5; }
     .ios.standalone .palette-primary-indigo .article {
       background: -webkit-linear-gradient(top, white 50%, #3f51b5 50%);
       background: linear-gradient(to bottom, white 50%, #3f51b5 50%); }
-    .palette-primary-indigo .article h1, .palette-primary-indigo .article h2, .palette-primary-indigo .article a, .palette-primary-indigo .article code {
-      color: #3f51b5; }
     .palette-primary-indigo .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-indigo .article table th {
       background: #6f7dc8; }
+    .palette-primary-indigo .article .MathJax, .palette-primary-indigo .article .MathJax .mi {
+      color: #3f51b5; }
   .palette-primary-indigo .results .meta {
     background: #3f51b5; }
+  .palette-primary-indigo .admonition {
+    background-color: #3f51b5; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -535,7 +615,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-blue {
       background: #2196F3; } }
@@ -565,35 +648,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-blue .project .logo svg .primary {
       fill: #2196F3; }
     .palette-primary-blue .project .logo svg .mark {
       fill: white; }
+    .palette-primary-blue .project a:hover,
+    .palette-primary-blue .project a:focus {
+      color: #2196F3; }
   .palette-primary-blue .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-blue .article a {
+      color: #2196F3; }
     .ios.standalone .palette-primary-blue .article {
       background: -webkit-linear-gradient(top, white 50%, #2196F3 50%);
       background: linear-gradient(to bottom, white 50%, #2196F3 50%); }
-    .palette-primary-blue .article h1, .palette-primary-blue .article h2, .palette-primary-blue .article a, .palette-primary-blue .article code {
-      color: #2196F3; }
     .palette-primary-blue .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-blue .article table th {
       background: #59b0f6; }
+    .palette-primary-blue .article .MathJax, .palette-primary-blue .article .MathJax .mi {
+      color: #2196F3; }
   .palette-primary-blue .results .meta {
     background: #2196F3; }
+  .palette-primary-blue .admonition {
+    background-color: #2196F3; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -614,7 +710,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-light-blue {
       background: #03a9f4; } }
@@ -644,35 +743,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-light-blue .project .logo svg .primary {
       fill: #03a9f4; }
     .palette-primary-light-blue .project .logo svg .mark {
       fill: white; }
+    .palette-primary-light-blue .project a:hover,
+    .palette-primary-light-blue .project a:focus {
+      color: #03a9f4; }
   .palette-primary-light-blue .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-light-blue .article a {
+      color: #03a9f4; }
     .ios.standalone .palette-primary-light-blue .article {
       background: -webkit-linear-gradient(top, white 50%, #03a9f4 50%);
       background: linear-gradient(to bottom, white 50%, #03a9f4 50%); }
-    .palette-primary-light-blue .article h1, .palette-primary-light-blue .article h2, .palette-primary-light-blue .article a, .palette-primary-light-blue .article code {
-      color: #03a9f4; }
     .palette-primary-light-blue .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-light-blue .article table th {
       background: #42bff7; }
+    .palette-primary-light-blue .article .MathJax, .palette-primary-light-blue .article .MathJax .mi {
+      color: #03a9f4; }
   .palette-primary-light-blue .results .meta {
     background: #03a9f4; }
+  .palette-primary-light-blue .admonition {
+    background-color: #03a9f4; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -693,7 +805,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-cyan {
       background: #00bcd4; } }
@@ -723,35 +838,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-cyan .project .logo svg .primary {
       fill: #00bcd4; }
     .palette-primary-cyan .project .logo svg .mark {
       fill: white; }
+    .palette-primary-cyan .project a:hover,
+    .palette-primary-cyan .project a:focus {
+      color: #00bcd4; }
   .palette-primary-cyan .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-cyan .article a {
+      color: #00bcd4; }
     .ios.standalone .palette-primary-cyan .article {
       background: -webkit-linear-gradient(top, white 50%, #00bcd4 50%);
       background: linear-gradient(to bottom, white 50%, #00bcd4 50%); }
-    .palette-primary-cyan .article h1, .palette-primary-cyan .article h2, .palette-primary-cyan .article a, .palette-primary-cyan .article code {
-      color: #00bcd4; }
     .palette-primary-cyan .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-cyan .article table th {
       background: #40cddf; }
+    .palette-primary-cyan .article .MathJax, .palette-primary-cyan .article .MathJax .mi {
+      color: #00bcd4; }
   .palette-primary-cyan .results .meta {
     background: #00bcd4; }
+  .palette-primary-cyan .admonition {
+    background-color: #00bcd4; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -772,7 +900,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-teal {
       background: #009688; } }
@@ -802,35 +933,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-teal .project .logo svg .primary {
       fill: #009688; }
     .palette-primary-teal .project .logo svg .mark {
       fill: white; }
+    .palette-primary-teal .project a:hover,
+    .palette-primary-teal .project a:focus {
+      color: #009688; }
   .palette-primary-teal .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-teal .article a {
+      color: #009688; }
     .ios.standalone .palette-primary-teal .article {
       background: -webkit-linear-gradient(top, white 50%, #009688 50%);
       background: linear-gradient(to bottom, white 50%, #009688 50%); }
-    .palette-primary-teal .article h1, .palette-primary-teal .article h2, .palette-primary-teal .article a, .palette-primary-teal .article code {
-      color: #009688; }
     .palette-primary-teal .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-teal .article table th {
       background: #40b0a6; }
+    .palette-primary-teal .article .MathJax, .palette-primary-teal .article .MathJax .mi {
+      color: #009688; }
   .palette-primary-teal .results .meta {
     background: #009688; }
+  .palette-primary-teal .admonition {
+    background-color: #009688; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -851,7 +995,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-green {
       background: #4caf50; } }
@@ -881,35 +1028,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-green .project .logo svg .primary {
       fill: #4caf50; }
     .palette-primary-green .project .logo svg .mark {
       fill: white; }
+    .palette-primary-green .project a:hover,
+    .palette-primary-green .project a:focus {
+      color: #4caf50; }
   .palette-primary-green .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-green .article a {
+      color: #4caf50; }
     .ios.standalone .palette-primary-green .article {
       background: -webkit-linear-gradient(top, white 50%, #4caf50 50%);
       background: linear-gradient(to bottom, white 50%, #4caf50 50%); }
-    .palette-primary-green .article h1, .palette-primary-green .article h2, .palette-primary-green .article a, .palette-primary-green .article code {
-      color: #4caf50; }
     .palette-primary-green .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-green .article table th {
       background: #79c37c; }
+    .palette-primary-green .article .MathJax, .palette-primary-green .article .MathJax .mi {
+      color: #4caf50; }
   .palette-primary-green .results .meta {
     background: #4caf50; }
+  .palette-primary-green .admonition {
+    background-color: #4caf50; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -930,7 +1090,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-light-green {
       background: #7cb342; } }
@@ -960,35 +1123,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-light-green .project .logo svg .primary {
       fill: #7cb342; }
     .palette-primary-light-green .project .logo svg .mark {
       fill: white; }
+    .palette-primary-light-green .project a:hover,
+    .palette-primary-light-green .project a:focus {
+      color: #7cb342; }
   .palette-primary-light-green .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-light-green .article a {
+      color: #7cb342; }
     .ios.standalone .palette-primary-light-green .article {
       background: -webkit-linear-gradient(top, white 50%, #7cb342 50%);
       background: linear-gradient(to bottom, white 50%, #7cb342 50%); }
-    .palette-primary-light-green .article h1, .palette-primary-light-green .article h2, .palette-primary-light-green .article a, .palette-primary-light-green .article code {
-      color: #7cb342; }
     .palette-primary-light-green .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-light-green .article table th {
       background: #9dc671; }
+    .palette-primary-light-green .article .MathJax, .palette-primary-light-green .article .MathJax .mi {
+      color: #7cb342; }
   .palette-primary-light-green .results .meta {
     background: #7cb342; }
+  .palette-primary-light-green .admonition {
+    background-color: #7cb342; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1009,7 +1185,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-lime {
       background: #c0ca33; } }
@@ -1039,35 +1218,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-lime .project .logo svg .primary {
       fill: #c0ca33; }
     .palette-primary-lime .project .logo svg .mark {
       fill: white; }
+    .palette-primary-lime .project a:hover,
+    .palette-primary-lime .project a:focus {
+      color: #c0ca33; }
   .palette-primary-lime .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-lime .article a {
+      color: #c0ca33; }
     .ios.standalone .palette-primary-lime .article {
       background: -webkit-linear-gradient(top, white 50%, #c0ca33 50%);
       background: linear-gradient(to bottom, white 50%, #c0ca33 50%); }
-    .palette-primary-lime .article h1, .palette-primary-lime .article h2, .palette-primary-lime .article a, .palette-primary-lime .article code {
-      color: #c0ca33; }
     .palette-primary-lime .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-lime .article table th {
       background: #d0d766; }
+    .palette-primary-lime .article .MathJax, .palette-primary-lime .article .MathJax .mi {
+      color: #c0ca33; }
   .palette-primary-lime .results .meta {
     background: #c0ca33; }
+  .palette-primary-lime .admonition {
+    background-color: #c0ca33; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1088,7 +1280,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-yellow {
       background: #f9a825; } }
@@ -1118,35 +1313,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-yellow .project .logo svg .primary {
       fill: #f9a825; }
     .palette-primary-yellow .project .logo svg .mark {
       fill: white; }
+    .palette-primary-yellow .project a:hover,
+    .palette-primary-yellow .project a:focus {
+      color: #f9a825; }
   .palette-primary-yellow .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-yellow .article a {
+      color: #f9a825; }
     .ios.standalone .palette-primary-yellow .article {
       background: -webkit-linear-gradient(top, white 50%, #f9a825 50%);
       background: linear-gradient(to bottom, white 50%, #f9a825 50%); }
-    .palette-primary-yellow .article h1, .palette-primary-yellow .article h2, .palette-primary-yellow .article a, .palette-primary-yellow .article code {
-      color: #f9a825; }
     .palette-primary-yellow .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-yellow .article table th {
       background: #fbbe5c; }
+    .palette-primary-yellow .article .MathJax, .palette-primary-yellow .article .MathJax .mi {
+      color: #f9a825; }
   .palette-primary-yellow .results .meta {
     background: #f9a825; }
+  .palette-primary-yellow .admonition {
+    background-color: #f9a825; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1167,7 +1375,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-amber {
       background: #ffb300; } }
@@ -1197,35 +1408,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-amber .project .logo svg .primary {
       fill: #ffb300; }
     .palette-primary-amber .project .logo svg .mark {
       fill: white; }
+    .palette-primary-amber .project a:hover,
+    .palette-primary-amber .project a:focus {
+      color: #ffb300; }
   .palette-primary-amber .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-amber .article a {
+      color: #ffb300; }
     .ios.standalone .palette-primary-amber .article {
       background: -webkit-linear-gradient(top, white 50%, #ffb300 50%);
       background: linear-gradient(to bottom, white 50%, #ffb300 50%); }
-    .palette-primary-amber .article h1, .palette-primary-amber .article h2, .palette-primary-amber .article a, .palette-primary-amber .article code {
-      color: #ffb300; }
     .palette-primary-amber .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-amber .article table th {
       background: #ffc640; }
+    .palette-primary-amber .article .MathJax, .palette-primary-amber .article .MathJax .mi {
+      color: #ffb300; }
   .palette-primary-amber .results .meta {
     background: #ffb300; }
+  .palette-primary-amber .admonition {
+    background-color: #ffb300; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1246,7 +1470,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-orange {
       background: #fb8c00; } }
@@ -1276,35 +1503,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-orange .project .logo svg .primary {
       fill: #fb8c00; }
     .palette-primary-orange .project .logo svg .mark {
       fill: white; }
+    .palette-primary-orange .project a:hover,
+    .palette-primary-orange .project a:focus {
+      color: #fb8c00; }
   .palette-primary-orange .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-orange .article a {
+      color: #fb8c00; }
     .ios.standalone .palette-primary-orange .article {
       background: -webkit-linear-gradient(top, white 50%, #fb8c00 50%);
       background: linear-gradient(to bottom, white 50%, #fb8c00 50%); }
-    .palette-primary-orange .article h1, .palette-primary-orange .article h2, .palette-primary-orange .article a, .palette-primary-orange .article code {
-      color: #fb8c00; }
     .palette-primary-orange .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-orange .article table th {
       background: #fca940; }
+    .palette-primary-orange .article .MathJax, .palette-primary-orange .article .MathJax .mi {
+      color: #fb8c00; }
   .palette-primary-orange .results .meta {
     background: #fb8c00; }
+  .palette-primary-orange .admonition {
+    background-color: #fb8c00; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1325,7 +1565,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-deep-orange {
       background: #ff7043; } }
@@ -1355,35 +1598,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-deep-orange .project .logo svg .primary {
       fill: #ff7043; }
     .palette-primary-deep-orange .project .logo svg .mark {
       fill: white; }
+    .palette-primary-deep-orange .project a:hover,
+    .palette-primary-deep-orange .project a:focus {
+      color: #ff7043; }
   .palette-primary-deep-orange .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-deep-orange .article a {
+      color: #ff7043; }
     .ios.standalone .palette-primary-deep-orange .article {
       background: -webkit-linear-gradient(top, white 50%, #ff7043 50%);
       background: linear-gradient(to bottom, white 50%, #ff7043 50%); }
-    .palette-primary-deep-orange .article h1, .palette-primary-deep-orange .article h2, .palette-primary-deep-orange .article a, .palette-primary-deep-orange .article code {
-      color: #ff7043; }
     .palette-primary-deep-orange .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-deep-orange .article table th {
       background: #ff9472; }
+    .palette-primary-deep-orange .article .MathJax, .palette-primary-deep-orange .article .MathJax .mi {
+      color: #ff7043; }
   .palette-primary-deep-orange .results .meta {
     background: #ff7043; }
+  .palette-primary-deep-orange .admonition {
+    background-color: #ff7043; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1404,7 +1660,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-brown {
       background: #795548; } }
@@ -1434,35 +1693,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-brown .project .logo svg .primary {
       fill: #795548; }
     .palette-primary-brown .project .logo svg .mark {
       fill: white; }
+    .palette-primary-brown .project a:hover,
+    .palette-primary-brown .project a:focus {
+      color: #795548; }
   .palette-primary-brown .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-brown .article a {
+      color: #795548; }
     .ios.standalone .palette-primary-brown .article {
       background: -webkit-linear-gradient(top, white 50%, #795548 50%);
       background: linear-gradient(to bottom, white 50%, #795548 50%); }
-    .palette-primary-brown .article h1, .palette-primary-brown .article h2, .palette-primary-brown .article a, .palette-primary-brown .article code {
-      color: #795548; }
     .palette-primary-brown .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-brown .article table th {
       background: #9b8076; }
+    .palette-primary-brown .article .MathJax, .palette-primary-brown .article .MathJax .mi {
+      color: #795548; }
   .palette-primary-brown .results .meta {
     background: #795548; }
+  .palette-primary-brown .admonition {
+    background-color: #795548; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1483,7 +1755,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-grey {
       background: #757575; } }
@@ -1513,35 +1788,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-grey .project .logo svg .primary {
       fill: #757575; }
     .palette-primary-grey .project .logo svg .mark {
       fill: white; }
+    .palette-primary-grey .project a:hover,
+    .palette-primary-grey .project a:focus {
+      color: #757575; }
   .palette-primary-grey .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-grey .article a {
+      color: #757575; }
     .ios.standalone .palette-primary-grey .article {
       background: -webkit-linear-gradient(top, white 50%, #757575 50%);
       background: linear-gradient(to bottom, white 50%, #757575 50%); }
-    .palette-primary-grey .article h1, .palette-primary-grey .article h2, .palette-primary-grey .article a, .palette-primary-grey .article code {
-      color: #757575; }
     .palette-primary-grey .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-grey .article table th {
       background: #989898; }
+    .palette-primary-grey .article .MathJax, .palette-primary-grey .article .MathJax .mi {
+      color: #757575; }
   .palette-primary-grey .results .meta {
     background: #757575; }
+  .palette-primary-grey .admonition {
+    background-color: #757575; }
 
 /*
    * Device specific background hacks related to rubberband
@@ -1562,7 +1850,10 @@
      */
   /*
      * Search meta data
-     */ }
+     */
+  /*
+    * Admonition support
+    */ }
   @supports (-webkit-appearance: none) {
     .palette-primary-blue-grey {
       background: #546e7a; } }
@@ -1592,35 +1883,48 @@
     /* [tablet landscape-]: Set background color */
     /*
       * Project logo
+      */
+    /*
+      * Color link on hover
       */ }
     .palette-primary-blue-grey .project .logo svg .primary {
       fill: #546e7a; }
     .palette-primary-blue-grey .project .logo svg .mark {
       fill: white; }
+    .palette-primary-blue-grey .project a:hover,
+    .palette-primary-blue-grey .project a:focus {
+      color: #546e7a; }
   .palette-primary-blue-grey .article {
     /*
-       * Differing top and bottom rubberband backgrounds in iOS web application
-       */
+      * Links
+      */
     /*
-       * Headlines, chapters, links and inline code
+       * Differing top and bottom rubberband backgrounds in iOS web application
        */
     /*
        * Light permalinks
        */
     /*
        * Data table headings
-       */ }
+       */
+    /*
+      * Math
+      */ }
+    .palette-primary-blue-grey .article a {
+      color: #546e7a; }
     .ios.standalone .palette-primary-blue-grey .article {
       background: -webkit-linear-gradient(top, white 50%, #546e7a 50%);
       background: linear-gradient(to bottom, white 50%, #546e7a 50%); }
-    .palette-primary-blue-grey .article h1, .palette-primary-blue-grey .article h2, .palette-primary-blue-grey .article a, .palette-primary-blue-grey .article code {
-      color: #546e7a; }
     .palette-primary-blue-grey .article .headerlink {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-blue-grey .article table th {
       background: #7f929b; }
+    .palette-primary-blue-grey .article .MathJax, .palette-primary-blue-grey .article .MathJax .mi {
+      color: #546e7a; }
   .palette-primary-blue-grey .results .meta {
     background: #546e7a; }
+  .palette-primary-blue-grey .admonition {
+    background-color: #546e7a; }
 
 /*
  * Build accent palette
