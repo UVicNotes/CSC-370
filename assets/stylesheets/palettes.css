@@ -205,7 +205,7 @@
     .ios.standalone .palette-primary-red .article {
       background: -webkit-linear-gradient(top, white 50%, #e84e40 50%);
       background: linear-gradient(to bottom, white 50%, #e84e40 50%); }
-    .palette-primary-red .article .headerlink {
+    .palette-primary-red .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-red .article table th {
       background: #ee7a70; }
@@ -300,7 +300,7 @@
     .ios.standalone .palette-primary-pink .article {
       background: -webkit-linear-gradient(top, white 50%, #e91e63 50%);
       background: linear-gradient(to bottom, white 50%, #e91e63 50%); }
-    .palette-primary-pink .article .headerlink {
+    .palette-primary-pink .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-pink .article table th {
       background: #ef568a; }
@@ -395,7 +395,7 @@
     .ios.standalone .palette-primary-purple .article {
       background: -webkit-linear-gradient(top, white 50%, #ab47bc 50%);
       background: linear-gradient(to bottom, white 50%, #ab47bc 50%); }
-    .palette-primary-purple .article .headerlink {
+    .palette-primary-purple .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-purple .article table th {
       background: #c075cd; }
@@ -490,7 +490,7 @@
     .ios.standalone .palette-primary-deep-purple .article {
       background: -webkit-linear-gradient(top, white 50%, #7e57c2 50%);
       background: linear-gradient(to bottom, white 50%, #7e57c2 50%); }
-    .palette-primary-deep-purple .article .headerlink {
+    .palette-primary-deep-purple .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-deep-purple .article table th {
       background: #9e81d1; }
@@ -585,7 +585,7 @@
     .ios.standalone .palette-primary-indigo .article {
       background: -webkit-linear-gradient(top, white 50%, #3f51b5 50%);
       background: linear-gradient(to bottom, white 50%, #3f51b5 50%); }
-    .palette-primary-indigo .article .headerlink {
+    .palette-primary-indigo .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-indigo .article table th {
       background: #6f7dc8; }
@@ -680,7 +680,7 @@
     .ios.standalone .palette-primary-blue .article {
       background: -webkit-linear-gradient(top, white 50%, #2196F3 50%);
       background: linear-gradient(to bottom, white 50%, #2196F3 50%); }
-    .palette-primary-blue .article .headerlink {
+    .palette-primary-blue .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-blue .article table th {
       background: #59b0f6; }
@@ -775,7 +775,7 @@
     .ios.standalone .palette-primary-light-blue .article {
       background: -webkit-linear-gradient(top, white 50%, #03a9f4 50%);
       background: linear-gradient(to bottom, white 50%, #03a9f4 50%); }
-    .palette-primary-light-blue .article .headerlink {
+    .palette-primary-light-blue .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-light-blue .article table th {
       background: #42bff7; }
@@ -870,7 +870,7 @@
     .ios.standalone .palette-primary-cyan .article {
       background: -webkit-linear-gradient(top, white 50%, #00bcd4 50%);
       background: linear-gradient(to bottom, white 50%, #00bcd4 50%); }
-    .palette-primary-cyan .article .headerlink {
+    .palette-primary-cyan .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-cyan .article table th {
       background: #40cddf; }
@@ -965,7 +965,7 @@
     .ios.standalone .palette-primary-teal .article {
       background: -webkit-linear-gradient(top, white 50%, #009688 50%);
       background: linear-gradient(to bottom, white 50%, #009688 50%); }
-    .palette-primary-teal .article .headerlink {
+    .palette-primary-teal .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-teal .article table th {
       background: #40b0a6; }
@@ -1060,7 +1060,7 @@
     .ios.standalone .palette-primary-green .article {
       background: -webkit-linear-gradient(top, white 50%, #4caf50 50%);
       background: linear-gradient(to bottom, white 50%, #4caf50 50%); }
-    .palette-primary-green .article .headerlink {
+    .palette-primary-green .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-green .article table th {
       background: #79c37c; }
@@ -1155,7 +1155,7 @@
     .ios.standalone .palette-primary-light-green .article {
       background: -webkit-linear-gradient(top, white 50%, #7cb342 50%);
       background: linear-gradient(to bottom, white 50%, #7cb342 50%); }
-    .palette-primary-light-green .article .headerlink {
+    .palette-primary-light-green .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-light-green .article table th {
       background: #9dc671; }
@@ -1250,7 +1250,7 @@
     .ios.standalone .palette-primary-lime .article {
       background: -webkit-linear-gradient(top, white 50%, #c0ca33 50%);
       background: linear-gradient(to bottom, white 50%, #c0ca33 50%); }
-    .palette-primary-lime .article .headerlink {
+    .palette-primary-lime .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-lime .article table th {
       background: #d0d766; }
@@ -1345,7 +1345,7 @@
     .ios.standalone .palette-primary-yellow .article {
       background: -webkit-linear-gradient(top, white 50%, #f9a825 50%);
       background: linear-gradient(to bottom, white 50%, #f9a825 50%); }
-    .palette-primary-yellow .article .headerlink {
+    .palette-primary-yellow .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-yellow .article table th {
       background: #fbbe5c; }
@@ -1440,7 +1440,7 @@
     .ios.standalone .palette-primary-amber .article {
       background: -webkit-linear-gradient(top, white 50%, #ffb300 50%);
       background: linear-gradient(to bottom, white 50%, #ffb300 50%); }
-    .palette-primary-amber .article .headerlink {
+    .palette-primary-amber .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-amber .article table th {
       background: #ffc640; }
@@ -1535,7 +1535,7 @@
     .ios.standalone .palette-primary-orange .article {
       background: -webkit-linear-gradient(top, white 50%, #fb8c00 50%);
       background: linear-gradient(to bottom, white 50%, #fb8c00 50%); }
-    .palette-primary-orange .article .headerlink {
+    .palette-primary-orange .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-orange .article table th {
       background: #fca940; }
@@ -1630,7 +1630,7 @@
     .ios.standalone .palette-primary-deep-orange .article {
       background: -webkit-linear-gradient(top, white 50%, #ff7043 50%);
       background: linear-gradient(to bottom, white 50%, #ff7043 50%); }
-    .palette-primary-deep-orange .article .headerlink {
+    .palette-primary-deep-orange .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-deep-orange .article table th {
       background: #ff9472; }
@@ -1725,7 +1725,7 @@
     .ios.standalone .palette-primary-brown .article {
       background: -webkit-linear-gradient(top, white 50%, #795548 50%);
       background: linear-gradient(to bottom, white 50%, #795548 50%); }
-    .palette-primary-brown .article .headerlink {
+    .palette-primary-brown .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-brown .article table th {
       background: #9b8076; }
@@ -1820,7 +1820,7 @@
     .ios.standalone .palette-primary-grey .article {
       background: -webkit-linear-gradient(top, white 50%, #757575 50%);
       background: linear-gradient(to bottom, white 50%, #757575 50%); }
-    .palette-primary-grey .article .headerlink {
+    .palette-primary-grey .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-grey .article table th {
       background: #989898; }
@@ -1915,7 +1915,7 @@
     .ios.standalone .palette-primary-blue-grey .article {
       background: -webkit-linear-gradient(top, white 50%, #546e7a 50%);
       background: linear-gradient(to bottom, white 50%, #546e7a 50%); }
-    .palette-primary-blue-grey .article .headerlink {
+    .palette-primary-blue-grey .article .headerlink:before {
       color: rgba(0, 0, 0, 0.26); }
     .palette-primary-blue-grey .article table th {
       background: #7f929b; }
@@ -1945,9 +1945,14 @@
   .palette-accent-red .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-red .article a:hover,
     .palette-accent-red .article a:focus {
+      color: #ff2d6f; }
+    .palette-accent-red .article .headerlink:hover:before {
       color: #ff2d6f; }
   .palette-accent-red .project {
     /*
@@ -1974,9 +1979,14 @@
   .palette-accent-pink .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-pink .article a:hover,
     .palette-accent-pink .article a:focus {
+      color: #f50057; }
+    .palette-accent-pink .article .headerlink:hover:before {
       color: #f50057; }
   .palette-accent-pink .project {
     /*
@@ -2003,9 +2013,14 @@
   .palette-accent-purple .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-purple .article a:hover,
     .palette-accent-purple .article a:focus {
+      color: #e040fb; }
+    .palette-accent-purple .article .headerlink:hover:before {
       color: #e040fb; }
   .palette-accent-purple .project {
     /*
@@ -2032,9 +2047,14 @@
   .palette-accent-deep-purple .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-deep-purple .article a:hover,
     .palette-accent-deep-purple .article a:focus {
+      color: #7c4dff; }
+    .palette-accent-deep-purple .article .headerlink:hover:before {
       color: #7c4dff; }
   .palette-accent-deep-purple .project {
     /*
@@ -2061,9 +2081,14 @@
   .palette-accent-indigo .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-indigo .article a:hover,
     .palette-accent-indigo .article a:focus {
+      color: #536dfe; }
+    .palette-accent-indigo .article .headerlink:hover:before {
       color: #536dfe; }
   .palette-accent-indigo .project {
     /*
@@ -2090,9 +2115,14 @@
   .palette-accent-blue .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-blue .article a:hover,
     .palette-accent-blue .article a:focus {
+      color: #448AFF; }
+    .palette-accent-blue .article .headerlink:hover:before {
       color: #448AFF; }
   .palette-accent-blue .project {
     /*
@@ -2119,9 +2149,14 @@
   .palette-accent-light-blue .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-light-blue .article a:hover,
     .palette-accent-light-blue .article a:focus {
+      color: #0091ea; }
+    .palette-accent-light-blue .article .headerlink:hover:before {
       color: #0091ea; }
   .palette-accent-light-blue .project {
     /*
@@ -2148,9 +2183,14 @@
   .palette-accent-cyan .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-cyan .article a:hover,
     .palette-accent-cyan .article a:focus {
+      color: #00b8d4; }
+    .palette-accent-cyan .article .headerlink:hover:before {
       color: #00b8d4; }
   .palette-accent-cyan .project {
     /*
@@ -2177,9 +2217,14 @@
   .palette-accent-teal .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-teal .article a:hover,
     .palette-accent-teal .article a:focus {
+      color: #00bfa5; }
+    .palette-accent-teal .article .headerlink:hover:before {
       color: #00bfa5; }
   .palette-accent-teal .project {
     /*
@@ -2206,9 +2251,14 @@
   .palette-accent-green .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-green .article a:hover,
     .palette-accent-green .article a:focus {
+      color: #00c853; }
+    .palette-accent-green .article .headerlink:hover:before {
       color: #00c853; }
   .palette-accent-green .project {
     /*
@@ -2235,9 +2285,14 @@
   .palette-accent-light-green .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-light-green .article a:hover,
     .palette-accent-light-green .article a:focus {
+      color: #64dd17; }
+    .palette-accent-light-green .article .headerlink:hover:before {
       color: #64dd17; }
   .palette-accent-light-green .project {
     /*
@@ -2264,9 +2319,14 @@
   .palette-accent-lime .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-lime .article a:hover,
     .palette-accent-lime .article a:focus {
+      color: #aeea00; }
+    .palette-accent-lime .article .headerlink:hover:before {
       color: #aeea00; }
   .palette-accent-lime .project {
     /*
@@ -2293,9 +2353,14 @@
   .palette-accent-yellow .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-yellow .article a:hover,
     .palette-accent-yellow .article a:focus {
+      color: #ffd600; }
+    .palette-accent-yellow .article .headerlink:hover:before {
       color: #ffd600; }
   .palette-accent-yellow .project {
     /*
@@ -2322,9 +2387,14 @@
   .palette-accent-amber .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-amber .article a:hover,
     .palette-accent-amber .article a:focus {
+      color: #ffab00; }
+    .palette-accent-amber .article .headerlink:hover:before {
       color: #ffab00; }
   .palette-accent-amber .project {
     /*
@@ -2351,9 +2421,14 @@
   .palette-accent-orange .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-orange .article a:hover,
     .palette-accent-orange .article a:focus {
+      color: #ff9100; }
+    .palette-accent-orange .article .headerlink:hover:before {
       color: #ff9100; }
   .palette-accent-orange .project {
     /*
@@ -2380,9 +2455,14 @@
   .palette-accent-deep-orange .article {
     /*
        * Hovered and focused links
+       */
+    /*
+       * Hovered permalinks
        */ }
     .palette-accent-deep-orange .article a:hover,
     .palette-accent-deep-orange .article a:focus {
+      color: #ff6e40; }
+    .palette-accent-deep-orange .article .headerlink:hover:before {
       color: #ff6e40; }
   .palette-accent-deep-orange .project {
     /*
@@ -2396,152 +2476,247 @@
   .palette-primary-red .project {
     background: #e84e40;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-red .project .logo svg .primary {
     fill: white; }
   .palette-primary-red .project .logo svg .mark {
     fill: #e84e40; }
+  .palette-primary-red .project a:hover,
+        .palette-primary-red .project a:focus {
+    color: #eeeeee; }
   .palette-primary-pink .project {
     background: #e91e63;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-pink .project .logo svg .primary {
     fill: white; }
   .palette-primary-pink .project .logo svg .mark {
     fill: #e91e63; }
+  .palette-primary-pink .project a:hover,
+        .palette-primary-pink .project a:focus {
+    color: #eeeeee; }
   .palette-primary-purple .project {
     background: #ab47bc;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-purple .project .logo svg .primary {
     fill: white; }
   .palette-primary-purple .project .logo svg .mark {
     fill: #ab47bc; }
+  .palette-primary-purple .project a:hover,
+        .palette-primary-purple .project a:focus {
+    color: #eeeeee; }
   .palette-primary-deep-purple .project {
     background: #7e57c2;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-deep-purple .project .logo svg .primary {
     fill: white; }
   .palette-primary-deep-purple .project .logo svg .mark {
     fill: #7e57c2; }
+  .palette-primary-deep-purple .project a:hover,
+        .palette-primary-deep-purple .project a:focus {
+    color: #eeeeee; }
   .palette-primary-indigo .project {
     background: #3f51b5;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-indigo .project .logo svg .primary {
     fill: white; }
   .palette-primary-indigo .project .logo svg .mark {
     fill: #3f51b5; }
+  .palette-primary-indigo .project a:hover,
+        .palette-primary-indigo .project a:focus {
+    color: #eeeeee; }
   .palette-primary-blue .project {
     background: #2196F3;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-blue .project .logo svg .primary {
     fill: white; }
   .palette-primary-blue .project .logo svg .mark {
     fill: #2196F3; }
+  .palette-primary-blue .project a:hover,
+        .palette-primary-blue .project a:focus {
+    color: #eeeeee; }
   .palette-primary-light-blue .project {
     background: #03a9f4;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-light-blue .project .logo svg .primary {
     fill: white; }
   .palette-primary-light-blue .project .logo svg .mark {
     fill: #03a9f4; }
+  .palette-primary-light-blue .project a:hover,
+        .palette-primary-light-blue .project a:focus {
+    color: #eeeeee; }
   .palette-primary-cyan .project {
     background: #00bcd4;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-cyan .project .logo svg .primary {
     fill: white; }
   .palette-primary-cyan .project .logo svg .mark {
     fill: #00bcd4; }
+  .palette-primary-cyan .project a:hover,
+        .palette-primary-cyan .project a:focus {
+    color: #eeeeee; }
   .palette-primary-teal .project {
     background: #009688;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-teal .project .logo svg .primary {
     fill: white; }
   .palette-primary-teal .project .logo svg .mark {
     fill: #009688; }
+  .palette-primary-teal .project a:hover,
+        .palette-primary-teal .project a:focus {
+    color: #eeeeee; }
   .palette-primary-green .project {
     background: #4caf50;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-green .project .logo svg .primary {
     fill: white; }
   .palette-primary-green .project .logo svg .mark {
     fill: #4caf50; }
+  .palette-primary-green .project a:hover,
+        .palette-primary-green .project a:focus {
+    color: #eeeeee; }
   .palette-primary-light-green .project {
     background: #7cb342;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-light-green .project .logo svg .primary {
     fill: white; }
   .palette-primary-light-green .project .logo svg .mark {
     fill: #7cb342; }
+  .palette-primary-light-green .project a:hover,
+        .palette-primary-light-green .project a:focus {
+    color: #eeeeee; }
   .palette-primary-lime .project {
     background: #c0ca33;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-lime .project .logo svg .primary {
     fill: white; }
   .palette-primary-lime .project .logo svg .mark {
     fill: #c0ca33; }
+  .palette-primary-lime .project a:hover,
+        .palette-primary-lime .project a:focus {
+    color: #eeeeee; }
   .palette-primary-yellow .project {
     background: #f9a825;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-yellow .project .logo svg .primary {
     fill: white; }
   .palette-primary-yellow .project .logo svg .mark {
     fill: #f9a825; }
+  .palette-primary-yellow .project a:hover,
+        .palette-primary-yellow .project a:focus {
+    color: #eeeeee; }
   .palette-primary-amber .project {
     background: #ffb300;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-amber .project .logo svg .primary {
     fill: white; }
   .palette-primary-amber .project .logo svg .mark {
     fill: #ffb300; }
+  .palette-primary-amber .project a:hover,
+        .palette-primary-amber .project a:focus {
+    color: #eeeeee; }
   .palette-primary-orange .project {
     background: #fb8c00;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-orange .project .logo svg .primary {
     fill: white; }
   .palette-primary-orange .project .logo svg .mark {
     fill: #fb8c00; }
+  .palette-primary-orange .project a:hover,
+        .palette-primary-orange .project a:focus {
+    color: #eeeeee; }
   .palette-primary-deep-orange .project {
     background: #ff7043;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-deep-orange .project .logo svg .primary {
     fill: white; }
   .palette-primary-deep-orange .project .logo svg .mark {
     fill: #ff7043; }
+  .palette-primary-deep-orange .project a:hover,
+        .palette-primary-deep-orange .project a:focus {
+    color: #eeeeee; }
   .palette-primary-brown .project {
     background: #795548;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-brown .project .logo svg .primary {
     fill: white; }
   .palette-primary-brown .project .logo svg .mark {
     fill: #795548; }
+  .palette-primary-brown .project a:hover,
+        .palette-primary-brown .project a:focus {
+    color: #eeeeee; }
   .palette-primary-grey .project {
     background: #757575;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-grey .project .logo svg .primary {
     fill: white; }
   .palette-primary-grey .project .logo svg .mark {
     fill: #757575; }
+  .palette-primary-grey .project a:hover,
+        .palette-primary-grey .project a:focus {
+    color: #eeeeee; }
   .palette-primary-blue-grey .project {
     background: #546e7a;/*
         * Project logo
+        *//*
+        * Color link on hover
         */ }
   .palette-primary-blue-grey .project .logo svg .primary {
     fill: white; }
   .palette-primary-blue-grey .project .logo svg .mark {
-    fill: #546e7a; } }
+    fill: #546e7a; }
+  .palette-primary-blue-grey .project a:hover,
+        .palette-primary-blue-grey .project a:focus {
+    color: #eeeeee; } }
