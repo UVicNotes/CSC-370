@@ -20,6 +20,8 @@ markdown_extensions:
     - codehilite(css_class=code)
     - admonition
     - smarty
+    - toc:
+        permalink: True
 extra:
   version: 'Spring 2017'
   palette:

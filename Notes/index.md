@@ -2,13 +2,12 @@
 
 ## [Connex](https://connex.csc.uvic.ca/portal/site/260f967a-d51f-4bb8-b01a-82f93e87504d/)
 
-* __Instructor__: Alex Thomo
-* __Office__: ECS 556
-* __Email__: [thomo@cs.uvic.ca](mailto:thomo@cs.uvic.ca)
-* __Office Hours__:
-  * Wednesdays, 2:30 PM to 3:30 PM
-  * Firdays, 3:30 PM to 4:30 PM
-
+* __<i class="icon icon-face"></i> Instructor__: Alex Thomo
+* __<i class="icon icon-pin-account"></i> Office__: ECS 556
+* __<i class="icon icon-email"></i> Email__: [thomo@cs.uvic.ca](mailto:thomo@cs.uvic.ca)
+* __<i class="icon icon-time"></i> Office Hours__:
+    * Wednesdays, 2:30 PM to 3:30 PM
+    * Fridays, 3:30 PM to 4:30 PM
 
 ## Overview
 
