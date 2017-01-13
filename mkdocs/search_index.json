@@ -152,13 +152,28 @@
         }, 
         {
             "location": "/4-SQL/", 
-            "text": "Structured Query Language (SQL)", 
+            "text": "Structured Query Language (SQL)\n\n\nStrutured Query Language (SQL)\n, \noften prounounced \nSequel\n, is a programming language for manipulating databases.\n\n\nSQL Common Data Types\n\n\n\n\n\n\n\n\nData type\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nCHARACTER(n)\n\n\nCharacter string. Fixed-length \nn\n.\n\n\n\n\n\n\nVARCHAR(n)\n\n\nCharacter string. Variable length. Maximum length \nn\n.\n\n\n\n\n\n\nBINARY(n)\n\n\nBinary string. Fixed-length \nn\n.\n\n\n\n\n\n\nBOOLEAN\n\n\nStores \nTRUE\n or \nFALSE\n values.\n\n\n\n\n\n\nVARBINARY(n)\n\n\nBinary string. Variable length. Maximum length \nn\n.\n\n\n\n\n\n\nINTEGER(p)\n\n\nInteger numerical (no decimal). Precision \np\n.\n\n\n\n\n\n\nDATE\n\n\nStores year, month, and day values.\n\n\n\n\n\n\nTIME\n\n\nStores hour, minute, and second values.\n\n\n\n\n\n\nTIMESTAMP\n\n\nStores year, month, day, hour, minute, and second values.\n\n\n\n\n\n\nARRAY\n\n\nA set-length and ordered collection of elements.\n\n\n\n\n\n\nMULTISET\n\n\nA variable-length and unordered collection of elements.\n\n\n\n\n\n\nXML\n\n\nStores XML data.\n\n\n\n\n\n\n\n\nCreating Tables\n\n\nWe can create a table with the \nCREATE\n command\n\n\nCREATE\n \nTABLE\n \nStudios\n(\n\n  \nname\n \nVARCHAR\n(\n20\n),\n\n  \nwebsite\n \nVARCHAR\n(\n255\n)\n\n\n);\n\n\n\n\n\n\nCreating with Primary Keys\n\n\nTo assign a single primary Keys\n\n\nCREATE\n \nTABLE\n \nStudios\n(\n\n  \nname\n \nVARCHAR\n(\n20\n)\n \nPRIMARY\n \nKEY\n,\n\n  \nwebsite\n \nVARCHAR\n(\n255\n)\n\n\n);\n\n\n\n\n\n\nTo assign multiple primary Keys\n\n\nCREATE\n \nTABLE\n \nMovies\n \n(\n\n  \ntitle\n \nVARCHAR\n(\n50\n),\n\n  \nyear\n \nINT\n,\n\n  \nlength\n \nINT\n,\n\n  \nrating\n \nCHAR\n(\n2\n),\n\n  \nstudioname\n \nVARCHAR\n(\n20\n),\n\n  \nPRIMARY\n \nKEY\n \n(\ntitle\n,\n \nyear\n)\n\n\n);", 
             "title": "Structured Query Language"
         }, 
         {
             "location": "/4-SQL/#structured-query-language-sql", 
-            "text": "", 
+            "text": "Strutured Query Language (SQL) ,  often prounounced  Sequel , is a programming language for manipulating databases.", 
             "title": "Structured Query Language (SQL)"
+        }, 
+        {
+            "location": "/4-SQL/#sql-common-data-types", 
+            "text": "Data type  Description      CHARACTER(n)  Character string. Fixed-length  n .    VARCHAR(n)  Character string. Variable length. Maximum length  n .    BINARY(n)  Binary string. Fixed-length  n .    BOOLEAN  Stores  TRUE  or  FALSE  values.    VARBINARY(n)  Binary string. Variable length. Maximum length  n .    INTEGER(p)  Integer numerical (no decimal). Precision  p .    DATE  Stores year, month, and day values.    TIME  Stores hour, minute, and second values.    TIMESTAMP  Stores year, month, day, hour, minute, and second values.    ARRAY  A set-length and ordered collection of elements.    MULTISET  A variable-length and unordered collection of elements.    XML  Stores XML data.", 
+            "title": "SQL Common Data Types"
+        }, 
+        {
+            "location": "/4-SQL/#creating-tables", 
+            "text": "We can create a table with the  CREATE  command  CREATE   TABLE   Studios ( \n   name   VARCHAR ( 20 ), \n   website   VARCHAR ( 255 )  );", 
+            "title": "Creating Tables"
+        }, 
+        {
+            "location": "/4-SQL/#creating-with-primary-keys", 
+            "text": "To assign a single primary Keys  CREATE   TABLE   Studios ( \n   name   VARCHAR ( 20 )   PRIMARY   KEY , \n   website   VARCHAR ( 255 )  );   To assign multiple primary Keys  CREATE   TABLE   Movies   ( \n   title   VARCHAR ( 50 ), \n   year   INT , \n   length   INT , \n   rating   CHAR ( 2 ), \n   studioname   VARCHAR ( 20 ), \n   PRIMARY   KEY   ( title ,   year )  );", 
+            "title": "Creating with Primary Keys"
         }
     ]
 }
