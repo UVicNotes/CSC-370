@@ -1,7 +1,5 @@
 # Entity Relationship Model
 
-**Lecture 2 - January 6, 2017**
-
 _definition:_ The **Entity Relationship Model** is a notation for expressing database designs.
 
 In the database both *entities* and *relationships* will be translated to *relations* (tables).
@@ -43,7 +41,10 @@ An entity set should satisfy one of the following
 #### Example
 
 Give an E/R diagram for a database recording information about teams, players, and their fans, including:
-1. For each team, its name, its players, its team captain (one of its players), and the colors of its uniform.2. For each player, his/her name.3. For each fan, his/her name, favorite teams, favorite players, and favorite color.
+
+1. For each team, its name, its players, its team captain (one of its players), and the colors of its uniform.
+2. For each player, his/her name.
+3. For each fan, his/her name, favorite teams, favorite players, and favorite color.
 
 #### Solution
 

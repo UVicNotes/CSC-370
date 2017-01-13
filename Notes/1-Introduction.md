@@ -1,7 +1,5 @@
 # Introduction
 
-**Lecture 1 - January 4, 2017**
-
 ## What is a database?
 
 __definition:__ A **database** is a collection of information that exists over a long period of time.
