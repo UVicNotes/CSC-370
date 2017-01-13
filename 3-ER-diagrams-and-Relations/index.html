@@ -139,7 +139,7 @@
         
         <br>
         <a href="https://github.com/UVicNotes/CSC-370/commits/master" target="_blank" title="Last Updated">
-          Updated Jan 12, 2017
+          Updated Jan 13, 2017
         </a>
       </div>
     </div>
@@ -221,8 +221,23 @@
               </a>
             </li>
           
+            <li class="anchor">
+              <a title="isa Relationships" href="#isa-relationships">
+                isa Relationships
+              </a>
+            </li>
+          
         </ul>
       
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Structured Query Language" href="../4-SQL/">
+      Structured Query Language
+    </a>
     
   </li>
 
@@ -294,6 +309,29 @@
 </tr>
 </tbody>
 </table>
+<h2 id="isa-relationships"><code>isa</code> Relationships<a class="headerlink" href="#isa-relationships" title="Permanent link">&para;</a></h2>
+<p>We can use <code>isa</code> relationships to show inheritance relations.</p>
+<p><img alt="" src="../img/Relationship-ISA.png" /></p>
+<p>We use two approaches to </p>
+<h3 id="object-oriented-approach">Object-Oriented Approach<a class="headerlink" href="#object-oriented-approach" title="Permanent link">&para;</a></h3>
+<p>In the <strong>Object-Oriented (OO)</strong> approach, every subclass has it&rsquo;s own relation. For the example above we have the following tables</p>
+<ul>
+<li><code>Movies(title, year, length, filmType)</code></li>
+<li><code>Cartoons(title, year, length, filmType)</code></li>
+<li><code>MurderMysteries(title, year, length, filmType, weapon)</code></li>
+<li><code>Cartoon-MurderMysteries(title, year, length, filmType, weapon)</code></li>
+<li><code>Voices(title, year, starName)</code></li>
+</ul>
+<p><strong>Issue</strong>: This approach requires many tables to implement, specifically if we have a root and $n$ children we require $2^n$ tables.</p>
+<h3 id="entityrelationship-approach">Entity/Relationship Approach<a class="headerlink" href="#entityrelationship-approach" title="Permanent link">&para;</a></h3>
+<p>In the <strong>Entity-Relationship</strong> approach, which is most common, the example above has the following tables</p>
+<ul>
+<li><code>Movies(title, year, length, filmType)</code></li>
+<li><code>MurderMystery(title, year, weapon)</code></li>
+<li><code>Cartoons(title, year)</code></li>
+<li><code>Voices(title, year, name)</code></li>
+</ul>
+<p><strong>Issue</strong>: We must do several table lookups to get the information for a single object. For example if we want the <code>length</code> and <code>weapon</code> for a murder mystery we have to look in <code>Movies</code> and <code>MurderMystery</code>.</p>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -328,6 +366,22 @@
       
     </div>
     <div class="next">
+      
+        <a href="../4-SQL/" title="Structured Query Language">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Structured Query Language
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-arrow-right"></i>
+            </div>
+          </div>
+        </a>
       
     </div>
   </nav>

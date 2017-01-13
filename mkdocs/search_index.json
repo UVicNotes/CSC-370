@@ -32,12 +32,12 @@
         }, 
         {
             "location": "/1-Introduction/", 
-            "text": "Introduction\n\n\nLecture 1 - January 4, 2017\n\n\nWhat is a database?\n\n\ndefinition:\n A \ndatabase\n is a collection of information that exists over a long period of time.\n\n\nA \nDatabase Management System (DBMS)\n a complex system for managing database interactions.\n\n\n\n\nAllows users to \neasily\n create new databases and specify schema.\n\n\nEnables users for \nsearch\n and \nmodify\n data.\n\n\nStores data \nintelligently\n,\n\n\nProtects from accidental use\n\n\nAllows efficient access, e.g., indexing\n\n\n\n\n\n\nManages \ncuncurrent\n data accesses and modifications.\n\n\nRecovers from failures and crashes.\n\n\n\n\nRelational Databases\n\n\nA database system should present the user with a view of the data organized as \ntables\n (or \nrelations\n).\n\n\nSo \nRelations\n are represented as \nTables\n, column headers are \nattribute names\n. Each row is a \ntuple\n.\n\n\nAccess with \nStructured Query Language (SQL)\n.\n\n\ne.g.\n\n\nGiven the database\n\n\n\n\n\n\n\n\naccountNo\n\n\nbalance\n\n\ntype\n\n\n\n\n\n\n\n\n\n\n12345\n\n\n1000.00\n\n\nsavings\n\n\n\n\n\n\n67890\n\n\n2846.92\n\n\nchecking\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat\u2019s the balance of account \u201c67890\u201d?\n\n\n\n\nSELECT\n \nbalance\n\n\nFROM\n \nAccounts\n\n\nWHERE\n \naccountNo\n \n=\n \n67890\n;\n\n\n\n\n\n\n\n\nWhich are the savings accounts with negative balances?\n\n\n\n\nSELECT\n \naccountNo\n\n\nFROM\n \nAccounts\n\n\nWHERE\n \ntype\n \n=\n \n\u2018\nsavings\n\u2019\n \nAND\n \nbalance\n \n \n0\n;", 
+            "text": "Introduction\n\n\nWhat is a database?\n\n\ndefinition:\n A \ndatabase\n is a collection of information that exists over a long period of time.\n\n\nA \nDatabase Management System (DBMS)\n a complex system for managing database interactions.\n\n\n\n\nAllows users to \neasily\n create new databases and specify schema.\n\n\nEnables users for \nsearch\n and \nmodify\n data.\n\n\nStores data \nintelligently\n,\n\n\nProtects from accidental use\n\n\nAllows efficient access, e.g., indexing\n\n\n\n\n\n\nManages \ncuncurrent\n data accesses and modifications.\n\n\nRecovers from failures and crashes.\n\n\n\n\nRelational Databases\n\n\nA database system should present the user with a view of the data organized as \ntables\n (or \nrelations\n).\n\n\nSo \nRelations\n are represented as \nTables\n, column headers are \nattribute names\n. Each row is a \ntuple\n.\n\n\nAccess with \nStructured Query Language (SQL)\n.\n\n\ne.g.\n\n\nGiven the database\n\n\n\n\n\n\n\n\naccountNo\n\n\nbalance\n\n\ntype\n\n\n\n\n\n\n\n\n\n\n12345\n\n\n1000.00\n\n\nsavings\n\n\n\n\n\n\n67890\n\n\n2846.92\n\n\nchecking\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat\u2019s the balance of account \u201c67890\u201d?\n\n\n\n\nSELECT\n \nbalance\n\n\nFROM\n \nAccounts\n\n\nWHERE\n \naccountNo\n \n=\n \n67890\n;\n\n\n\n\n\n\n\n\nWhich are the savings accounts with negative balances?\n\n\n\n\nSELECT\n \naccountNo\n\n\nFROM\n \nAccounts\n\n\nWHERE\n \ntype\n \n=\n \n\u2018\nsavings\n\u2019\n \nAND\n \nbalance\n \n \n0\n;", 
             "title": "Introduction"
         }, 
         {
             "location": "/1-Introduction/#introduction", 
-            "text": "Lecture 1 - January 4, 2017", 
+            "text": "", 
             "title": "Introduction"
         }, 
         {
@@ -57,12 +57,12 @@
         }, 
         {
             "location": "/2-Entity-Relationship-Model/", 
-            "text": "Entity Relationship Model\n\n\nLecture 2 - January 6, 2017\n\n\ndefinition:\n The \nEntity Relationship Model\n is a notation for expressing database designs.\n\n\nIn the database both \nentities\n and \nrelationships\n will be translated to \nrelations\n (tables).\n\n\nExample\n\n\nWe can represent a database for movies as follows,\n\n\n\n\nIn this diagram,\n\n\n\n\nSquares\n represent entities.\n\n\nCircles\n represent attributes.\n\n\nDiamonds\n represent relations.\n\n\nArrows\n represent a singular relations.\n\n\n\n\nSo \none\n studio \nowns\n \nmany\n movies.\n\n\nKeys\n\n\ndefinition\n: A \nkey\n is an attribute, or a set of attributes, such that no two entities have the same key.\n\n\nIn Entity-Relationship diagrams we \nunderline\n the keys,\n\n\n\n\nSurrogate Keys\n\n\ndefinition\n: A \nsurrogate key\n is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.\n\n\nRules\n\n\nAn entity set should satisfy one of the following\n\n\n\n\nIt\ns more then the name of something, i.e., it has a non-key attribute.\n\n\nIt\ns the \nmany\n side in a relationship.\n\n\n\n\nExample\n\n\nGive an E/R diagram for a database recording information about teams, players, and their fans, including:\n\n\n\n\nFor each team, its name, its players, its team captain (one of its players), and the colors of its uniform.\n\n\nFor each player, his/her name.\n\n\nFor each fan, his/her name, favorite teams, favorite players, and favorite color.\n\n\n\n\nSolution\n\n\n\n\nSubclasses\n\n\ndefinition\n: Sometimes in an entity set or class you have have different types of that entity set, \nsubclasses\n.\n\n\nWeak Entity Sets\n\n\ndefinition\n: An entity set is said to be \nweak\n if we need to follow one or more \nmany-to-one\n relationships to uniquely identify the entity set.\n\n\nA \nsurrogate key\n can be used to avoid creating weak entity sets.\n\n\nExample\n\n\nFor football players \nname\n and \nnumber\n are not enough to identify them (since two players \ncould\n have the same name and the same player number), so require the teams \nname\n, related by \nplays-on\n to uniquely identify them.", 
+            "text": "Entity Relationship Model\n\n\ndefinition:\n The \nEntity Relationship Model\n is a notation for expressing database designs.\n\n\nIn the database both \nentities\n and \nrelationships\n will be translated to \nrelations\n (tables).\n\n\nExample\n\n\nWe can represent a database for movies as follows,\n\n\n\n\nIn this diagram,\n\n\n\n\nSquares\n represent entities.\n\n\nCircles\n represent attributes.\n\n\nDiamonds\n represent relations.\n\n\nArrows\n represent a singular relations.\n\n\n\n\nSo \none\n studio \nowns\n \nmany\n movies.\n\n\nKeys\n\n\ndefinition\n: A \nkey\n is an attribute, or a set of attributes, such that no two entities have the same key.\n\n\nIn Entity-Relationship diagrams we \nunderline\n the keys,\n\n\n\n\nSurrogate Keys\n\n\ndefinition\n: A \nsurrogate key\n is a unique identifier which only serves to be the key for an entity. For example a student number or Social Insurance Number (SIN) is a surrogate key.\n\n\nRules\n\n\nAn entity set should satisfy one of the following\n\n\n\n\nIt\ns more then the name of something, i.e., it has a non-key attribute.\n\n\nIt\ns the \nmany\n side in a relationship.\n\n\n\n\nExample\n\n\nGive an E/R diagram for a database recording information about teams, players, and their fans, including:\n\n\n\n\nFor each team, its name, its players, its team captain (one of its players), and the colors of its uniform.\n\n\nFor each player, his/her name.\n\n\nFor each fan, his/her name, favorite teams, favorite players, and favorite color.\n\n\n\n\nSolution\n\n\n\n\nSubclasses\n\n\ndefinition\n: Sometimes in an entity set or class you have have different types of that entity set, \nsubclasses\n.\n\n\nWeak Entity Sets\n\n\ndefinition\n: An entity set is said to be \nweak\n if we need to follow one or more \nmany-to-one\n relationships to uniquely identify the entity set.\n\n\nA \nsurrogate key\n can be used to avoid creating weak entity sets.\n\n\nExample\n\n\nFor football players \nname\n and \nnumber\n are not enough to identify them (since two players \ncould\n have the same name and the same player number), so require the teams \nname\n, related by \nplays-on\n to uniquely identify them.", 
             "title": "Entity/Relationship Model"
         }, 
         {
             "location": "/2-Entity-Relationship-Model/#entity-relationship-model", 
-            "text": "Lecture 2 - January 6, 2017  definition:  The  Entity Relationship Model  is a notation for expressing database designs.  In the database both  entities  and  relationships  will be translated to  relations  (tables).", 
+            "text": "definition:  The  Entity Relationship Model  is a notation for expressing database designs.  In the database both  entities  and  relationships  will be translated to  relations  (tables).", 
             "title": "Entity Relationship Model"
         }, 
         {
@@ -112,7 +112,7 @@
         }, 
         {
             "location": "/3-ER-diagrams-and-Relations/", 
-            "text": "E/R Diagrams to Relations\n\n\nTable Terminology\n\n\nIn a table\n\n\n\n\nHeadings\n are \nattribute names\n.\n\n\nRows\n are \ntuples\n.\n\n\nElements\n in rows are tuple components\n\n\n\n\nEntity Sets to Relations\n\n\nExample\n\n\n\n\nThe tables are,\n\n\n\n\nMovies\n: (\ntitle\n, \nyear\n, \nlength\n, \nfilmType\n, \nstudioName\n) \n\n\nStudios\n: (\nname\n, \naddress\n)\n\n\nStars\n: (\nname\n, \naddress\n)\n\n\nStarsIn\n: (\ntitle\n, \nyear\n, \nstarName\n)\n\n\n\n\nThe \nmovies\n table would look like,\n\n\n\n\n\n\n\n\ntitle\n\n\nyear\n\n\nlength\n\n\nfilmType\n\n\nstudioName\n\n\n\n\n\n\n\n\n\n\nGodzilla\n\n\n2014\n\n\n200\n\n\nfeature\n\n\nFox", 
+            "text": "E/R Diagrams to Relations\n\n\nTable Terminology\n\n\nIn a table\n\n\n\n\nHeadings\n are \nattribute names\n.\n\n\nRows\n are \ntuples\n.\n\n\nElements\n in rows are tuple components\n\n\n\n\nEntity Sets to Relations\n\n\nExample\n\n\n\n\nThe tables are,\n\n\n\n\nMovies\n: (\ntitle\n, \nyear\n, \nlength\n, \nfilmType\n, \nstudioName\n) \n\n\nStudios\n: (\nname\n, \naddress\n)\n\n\nStars\n: (\nname\n, \naddress\n)\n\n\nStarsIn\n: (\ntitle\n, \nyear\n, \nstarName\n)\n\n\n\n\nThe \nmovies\n table would look like,\n\n\n\n\n\n\n\n\ntitle\n\n\nyear\n\n\nlength\n\n\nfilmType\n\n\nstudioName\n\n\n\n\n\n\n\n\n\n\nGodzilla\n\n\n2014\n\n\n200\n\n\nfeature\n\n\nFox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nisa\n Relationships\n\n\nWe can use \nisa\n relationships to show inheritance relations.\n\n\n\n\nWe use two approaches to \n\n\nObject-Oriented Approach\n\n\nIn the \nObject-Oriented (OO)\n approach, every subclass has it\ns own relation. For the example above we have the following tables\n\n\n\n\nMovies(title, year, length, filmType)\n\n\nCartoons(title, year, length, filmType)\n\n\nMurderMysteries(title, year, length, filmType, weapon)\n\n\nCartoon-MurderMysteries(title, year, length, filmType, weapon)\n\n\nVoices(title, year, starName)\n\n\n\n\nIssue\n: This approach requires many tables to implement, specifically if we have a root and $n$ children we require $2^n$ tables.\n\n\nEntity/Relationship Approach\n\n\nIn the \nEntity-Relationship\n approach, which is most common, the example above has the following tables\n\n\n\n\nMovies(title, year, length, filmType)\n\n\nMurderMystery(title, year, weapon)\n\n\nCartoons(title, year)\n\n\nVoices(title, year, name)\n\n\n\n\nIssue\n: We must do several table lookups to get the information for a single object. For example if we want the \nlength\n and \nweapon\n for a murder mystery we have to look in \nMovies\n and \nMurderMystery\n.", 
             "title": "E/R Diagrams to Relations"
         }, 
         {
@@ -134,6 +134,31 @@
             "location": "/3-ER-diagrams-and-Relations/#example", 
             "text": "The tables are,   Movies : ( title ,  year ,  length ,  filmType ,  studioName )   Studios : ( name ,  address )  Stars : ( name ,  address )  StarsIn : ( title ,  year ,  starName )   The  movies  table would look like,     title  year  length  filmType  studioName      Godzilla  2014  200  feature  Fox", 
             "title": "Example"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/#isa-relationships", 
+            "text": "We can use  isa  relationships to show inheritance relations.   We use two approaches to", 
+            "title": "isa Relationships"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/#object-oriented-approach", 
+            "text": "In the  Object-Oriented (OO)  approach, every subclass has it s own relation. For the example above we have the following tables   Movies(title, year, length, filmType)  Cartoons(title, year, length, filmType)  MurderMysteries(title, year, length, filmType, weapon)  Cartoon-MurderMysteries(title, year, length, filmType, weapon)  Voices(title, year, starName)   Issue : This approach requires many tables to implement, specifically if we have a root and $n$ children we require $2^n$ tables.", 
+            "title": "Object-Oriented Approach"
+        }, 
+        {
+            "location": "/3-ER-diagrams-and-Relations/#entityrelationship-approach", 
+            "text": "In the  Entity-Relationship  approach, which is most common, the example above has the following tables   Movies(title, year, length, filmType)  MurderMystery(title, year, weapon)  Cartoons(title, year)  Voices(title, year, name)   Issue : We must do several table lookups to get the information for a single object. For example if we want the  length  and  weapon  for a murder mystery we have to look in  Movies  and  MurderMystery .", 
+            "title": "Entity/Relationship Approach"
+        }, 
+        {
+            "location": "/4-SQL/", 
+            "text": "Structured Query Language (SQL)", 
+            "title": "Structured Query Language"
+        }, 
+        {
+            "location": "/4-SQL/#structured-query-language-sql", 
+            "text": "", 
+            "title": "Structured Query Language (SQL)"
         }
     ]
 }
