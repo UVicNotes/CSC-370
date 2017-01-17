@@ -174,6 +174,36 @@
             "location": "/4-SQL/#creating-with-primary-keys", 
             "text": "To assign a single primary Keys  CREATE   TABLE   Studios ( \n   name   VARCHAR ( 20 )   PRIMARY   KEY , \n   website   VARCHAR ( 255 )  );   To assign multiple primary Keys  CREATE   TABLE   Movies   ( \n   title   VARCHAR ( 50 ), \n   year   INT , \n   length   INT , \n   rating   CHAR ( 2 ), \n   studioname   VARCHAR ( 20 ), \n   PRIMARY   KEY   ( title ,   year )  );", 
             "title": "Creating with Primary Keys"
+        }, 
+        {
+            "location": "/5-Relational-Algebra/", 
+            "text": "Relational Algebra\n\n\ndefintion\n: In the relational model, operations can be expressed in algebra called \nrelational algebra\n. In relational algebra, \nrelations\n are the \noperands\n and we apply \noperators\n to them.\n\n\nBasic Operations\n\n\n\n\nUnion, $\\cup$\n\n\nIntersection, $\\cap$\n\n\nDifference, $-$\n\n\n\n\nRemoval Operations\n\n\nSelection\n\n\nSelection ($\\sigma$) eliminates some rows, for example\n\n\n\n\n\n  \\sigma_{A < 2}(R)\n\n\n\n\n\nis a new relation with rows from $R$ where $A$ is less than $2$.\n\n\nProjection\n\n\nProjection ($\\pi$) eliminates some columns, for example\n\n\n\n\n\n  \\pi_{A_1,\\ldots,A_n}(R)\n\n\n\n\n\nis a new relation with columns $A_1,\\ldots,A_n$ from $R$.", 
+            "title": "Relational Algebra"
+        }, 
+        {
+            "location": "/5-Relational-Algebra/#relational-algebra", 
+            "text": "defintion : In the relational model, operations can be expressed in algebra called  relational algebra . In relational algebra,  relations  are the  operands  and we apply  operators  to them.", 
+            "title": "Relational Algebra"
+        }, 
+        {
+            "location": "/5-Relational-Algebra/#basic-operations", 
+            "text": "Union, $\\cup$  Intersection, $\\cap$  Difference, $-$", 
+            "title": "Basic Operations"
+        }, 
+        {
+            "location": "/5-Relational-Algebra/#removal-operations", 
+            "text": "", 
+            "title": "Removal Operations"
+        }, 
+        {
+            "location": "/5-Relational-Algebra/#selection", 
+            "text": "Selection ($\\sigma$) eliminates some rows, for example   \n  \\sigma_{A < 2}(R)   is a new relation with rows from $R$ where $A$ is less than $2$.", 
+            "title": "Selection"
+        }, 
+        {
+            "location": "/5-Relational-Algebra/#projection", 
+            "text": "Projection ($\\pi$) eliminates some columns, for example   \n  \\pi_{A_1,\\ldots,A_n}(R)   is a new relation with columns $A_1,\\ldots,A_n$ from $R$.", 
+            "title": "Projection"
         }
     ]
 }

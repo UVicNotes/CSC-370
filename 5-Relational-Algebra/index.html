@@ -9,21 +9,21 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>Introduction - CSC 370</title>
+        <title>Relational Algebra - CSC 370</title>
       
       
         <meta name="description" content="Course Notes for CSC 370 - Foundations of Computer Science">
       
       
-        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/1-Introduction/">
+        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/5-Relational-Algebra/">
       
       
         <meta name="author" content="Brynn Hawker">
       
     
-    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/1-Introduction/">
+    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/5-Relational-Algebra/">
     <meta property="og:title" content="CSC 370">
-    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370/1-Introduction//../">
+    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370/5-Relational-Algebra//../">
     <meta name="apple-mobile-web-app-title" content="CSC 370">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -85,7 +85,7 @@
             
           </span>
         
-        Introduction
+        Relational Algebra
       </div>
     </div>
     
@@ -181,30 +181,9 @@
       
         
   <li>
-    <a class="current" title="Introduction" href="./">
+    <a class="" title="Introduction" href="../1-Introduction/">
       Introduction
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="What is a database?" href="#what-is-a-database">
-                What is a database?
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Relational Databases" href="#relational-databases">
-                Relational Databases
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
@@ -238,9 +217,30 @@
       
         
   <li>
-    <a class="" title="Relational Algebra" href="../5-Relational-Algebra/">
+    <a class="current" title="Relational Algebra" href="./">
       Relational Algebra
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Basic Operations" href="#basic-operations">
+                Basic Operations
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Removal Operations" href="#removal-operations">
+                Removal Operations
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -266,69 +266,31 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-a-database">What is a database?<a class="headerlink" href="#what-is-a-database" title="Permanent link">&para;</a></h2>
-<p><strong>definition:</strong> A <strong>database</strong> is a collection of information that exists over a long period of time.</p>
-<p>A <strong>Database Management System (DBMS)</strong> a complex system for managing database interactions.</p>
-<ol>
-<li>Allows users to <em>easily</em> create new databases and specify schema.</li>
-<li>Enables users for <em>search</em> and <em>modify</em> data.</li>
-<li>Stores data <em>intelligently</em>,<ul>
-<li>Protects from accidental use</li>
-<li>Allows efficient access, e.g., indexing</li>
+          <h1 id="relational-algebra">Relational Algebra<a class="headerlink" href="#relational-algebra" title="Permanent link">&para;</a></h1>
+<p><em>defintion</em>: In the relational model, operations can be expressed in algebra called <strong>relational algebra</strong>. In relational algebra, <em>relations</em> are the <em>operands</em> and we apply <em>operators</em> to them.</p>
+<h2 id="basic-operations">Basic Operations<a class="headerlink" href="#basic-operations" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Union, $\cup$</li>
+<li>Intersection, $\cap$</li>
+<li>Difference, $-$</li>
 </ul>
-</li>
-<li>Manages <em>cuncurrent</em> data accesses and modifications.</li>
-<li>Recovers from failures and crashes.</li>
-</ol>
-<h2 id="relational-databases">Relational Databases<a class="headerlink" href="#relational-databases" title="Permanent link">&para;</a></h2>
-<p>A database system should present the user with a view of the data organized as <em>tables</em> (or <em>relations</em>).</p>
-<p>So <code>Relations</code> are represented as <code>Tables</code>, column headers are <em>attribute names</em>. Each row is a <em>tuple</em>.</p>
-<p>Access with <strong>Structured Query Language (SQL)</strong>.</p>
-<h5 id="eg">e.g.<a class="headerlink" href="#eg" title="Permanent link">&para;</a></h5>
-<p>Given the database</p>
-<table>
-<thead>
-<tr>
-<th align="center"><code>accountNo</code></th>
-<th align="center"><code>balance</code></th>
-<th align="center"><code>type</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">12345</td>
-<td align="center">1000.00</td>
-<td align="center"><code>savings</code></td>
-</tr>
-<tr>
-<td align="center">67890</td>
-<td align="center">2846.92</td>
-<td align="center"><code>checking</code></td>
-</tr>
-<tr>
-<td align="center">&hellip;</td>
-<td align="center">&hellip;</td>
-<td align="center">&hellip;</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>What’s the balance of account “67890”?</li>
-</ol>
-<div class="code"><pre><span></span><span class="k">SELECT</span> <span class="n">balance</span>
-<span class="k">FROM</span> <span class="n">Accounts</span>
-<span class="k">WHERE</span> <span class="n">accountNo</span> <span class="o">=</span> <span class="mi">67890</span><span class="p">;</span>
-</pre></div>
-
-
-<ol>
-<li>Which are the savings accounts with negative balances?</li>
-</ol>
-<div class="code"><pre><span></span><span class="k">SELECT</span> <span class="n">accountNo</span>
-<span class="k">FROM</span> <span class="n">Accounts</span>
-<span class="k">WHERE</span> <span class="k">type</span> <span class="o">=</span> <span class="err">‘</span><span class="n">savings</span><span class="err">’</span> <span class="k">AND</span> <span class="n">balance</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">;</span>
-</pre></div>
+<h2 id="removal-operations">Removal Operations<a class="headerlink" href="#removal-operations" title="Permanent link">&para;</a></h2>
+<h3 id="selection">Selection<a class="headerlink" href="#selection" title="Permanent link">&para;</a></h3>
+<p>Selection ($\sigma$) eliminates some rows, for example</p>
+<p>
+<script type="math/tex; mode=display">
+  \sigma_{A < 2}(R)
+</script>
+</p>
+<p>is a new relation with rows from $R$ where $A$ is less than $2$.</p>
+<h3 id="projection">Projection<a class="headerlink" href="#projection" title="Permanent link">&para;</a></h3>
+<p>Projection ($\pi$) eliminates some columns, for example</p>
+<p>
+<script type="math/tex; mode=display">
+  \pi_{A_1,\ldots,A_n}(R)
+</script>
+</p>
+<p>is a new relation with columns $A_1,\ldots,A_n$ from $R$.</p>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -345,7 +307,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href=".." title="Home">
+        <a href="../4-SQL/" title="Structured Query Language">
           <span class="direction">
             Previous
           </span>
@@ -355,7 +317,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                Home
+                Structured Query Language
               </div>
             </div>
           </div>
@@ -363,22 +325,6 @@
       
     </div>
     <div class="next">
-      
-        <a href="../2-Entity-Relationship-Model/" title="Entity/Relationship Model">
-          <span class="direction">
-            Next
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                Entity/Relationship Model
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-arrow-right"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>

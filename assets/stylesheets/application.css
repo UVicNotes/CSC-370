@@ -6554,6 +6554,9 @@ pre span {
    * Inline code
    */
   /*
+   * Math
+   */
+  /*
    * Keyboard tags
    */
   /*
@@ -6586,6 +6589,8 @@ pre span {
   .article p code, .article table code, .article li code {
     color: #616161;
     background: #eee; }
+  .article .MathJax, .article .MathJax .mi {
+    color: inherit; }
   .article kbd {
     color: #555;
     background-color: #fcfcfc;
