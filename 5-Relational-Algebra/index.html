@@ -139,7 +139,7 @@
         
         <br>
         <a href="https://github.com/UVicNotes/CSC-370/commits/master" target="_blank" title="Last Updated">
-          Updated Jan 17, 2017
+          Updated Jan 18, 2017
         </a>
       </div>
     </div>
@@ -239,6 +239,12 @@
               </a>
             </li>
           
+            <li class="anchor">
+              <a title="Combination Operations" href="#combination-operations">
+                Combination Operations
+              </a>
+            </li>
+          
         </ul>
       
     
@@ -269,11 +275,30 @@
           <h1 id="relational-algebra">Relational Algebra<a class="headerlink" href="#relational-algebra" title="Permanent link">&para;</a></h1>
 <p><em>defintion</em>: In the relational model, operations can be expressed in algebra called <strong>relational algebra</strong>. In relational algebra, <em>relations</em> are the <em>operands</em> and we apply <em>operators</em> to them.</p>
 <h2 id="basic-operations">Basic Operations<a class="headerlink" href="#basic-operations" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Union, $\cup$</li>
-<li>Intersection, $\cap$</li>
-<li>Difference, $-$</li>
-</ul>
+<h3 id="union">Union<a class="headerlink" href="#union" title="Permanent link">&para;</a></h3>
+<p>Union ($\cup$) is all tuples from each operand. For example,</p>
+<p>
+<script type="math/tex; mode=display">
+  R \cup S
+</script>
+</p>
+<p>is all the tuples in $R$ <strong>or</strong> in $S$, or both.</p>
+<h3 id="intersection">Intersection<a class="headerlink" href="#intersection" title="Permanent link">&para;</a></h3>
+<p>Intersection ($\cap$) is all tuples from both operands. For example,</p>
+<p>
+<script type="math/tex; mode=display">
+  R \cap S
+</script>
+</p>
+<p>is all the tuples in both $R$ <strong>and</strong> in $S$.</p>
+<h3 id="difference">Difference<a class="headerlink" href="#difference" title="Permanent link">&para;</a></h3>
+<p>Difference ($-$) is the difference between the tuples from each operand. For example,</p>
+<p>
+<script type="math/tex; mode=display">
+  R - S
+</script>
+</p>
+<p>is all the tuples in $R$ but <strong>not</strong> in $S$. Note $R - S \neq S - R$.</p>
 <h2 id="removal-operations">Removal Operations<a class="headerlink" href="#removal-operations" title="Permanent link">&para;</a></h2>
 <h3 id="selection">Selection<a class="headerlink" href="#selection" title="Permanent link">&para;</a></h3>
 <p>Selection ($\sigma$) eliminates some rows, for example</p>
@@ -291,6 +316,111 @@
 </script>
 </p>
 <p>is a new relation with columns $A_1,\ldots,A_n$ from $R$.</p>
+<h2 id="combination-operations">Combination Operations<a class="headerlink" href="#combination-operations" title="Permanent link">&para;</a></h2>
+<h3 id="cartesian-product">Cartesian Product<a class="headerlink" href="#cartesian-product" title="Permanent link">&para;</a></h3>
+<p>The Cartesian Product ($\times$) is all tuples with the first part from the first operand and the second part from the second operand. Common attributes should be prefixed with the relation name. For example, given the relation $R$</p>
+<table>
+<thead>
+<tr>
+<th align="center">$A$</th>
+<th align="center">$B$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">$a_1$</td>
+<td align="center">$b_1$</td>
+</tr>
+<tr>
+<td align="center">$a_2$</td>
+<td align="center">$b_2$</td>
+</tr>
+</tbody>
+</table>
+<p>and the relation $S$</p>
+<table>
+<thead>
+<tr>
+<th align="center">$B$</th>
+<th align="center">$C$</th>
+<th align="center">$D$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">$b_3$</td>
+<td align="center">$c_1$</td>
+<td align="center">$d_1$</td>
+</tr>
+<tr>
+<td align="center">$b_4$</td>
+<td align="center">$c_2$</td>
+<td align="center">$d_2$</td>
+</tr>
+<tr>
+<td align="center">$b_5$</td>
+<td align="center">$c_3$</td>
+<td align="center">$d_3$</td>
+</tr>
+</tbody>
+</table>
+<p>then the relation $R \times S$ is</p>
+<table>
+<thead>
+<tr>
+<th align="center">$A$</th>
+<th align="center">$R.B$</th>
+<th align="center">$S.B$</th>
+<th align="center">$C$</th>
+<th align="center">$D$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">$a_1$</td>
+<td align="center">$b_1$</td>
+<td align="center">$b_3$</td>
+<td align="center">$c_1$</td>
+<td align="center">$d_1$</td>
+</tr>
+<tr>
+<td align="center">$a_1$</td>
+<td align="center">$b_1$</td>
+<td align="center">$b_4$</td>
+<td align="center">$c_2$</td>
+<td align="center">$d_2$</td>
+</tr>
+<tr>
+<td align="center">$a_1$</td>
+<td align="center">$b_1$</td>
+<td align="center">$b_5$</td>
+<td align="center">$c_3$</td>
+<td align="center">$d_3$</td>
+</tr>
+<tr>
+<td align="center">$a_2$</td>
+<td align="center">$b_2$</td>
+<td align="center">$b_3$</td>
+<td align="center">$c_1$</td>
+<td align="center">$d_1$</td>
+</tr>
+<tr>
+<td align="center">$a_2$</td>
+<td align="center">$b_2$</td>
+<td align="center">$b_4$</td>
+<td align="center">$c_2$</td>
+<td align="center">$d_2$</td>
+</tr>
+<tr>
+<td align="center">$a_2$</td>
+<td align="center">$b_2$</td>
+<td align="center">$b_5$</td>
+<td align="center">$c_3$</td>
+<td align="center">$d_3$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="join">Join<a class="headerlink" href="#join" title="Permanent link">&para;</a></h3>
           <aside class="copyright" role="note">
             
             Documentation built with
