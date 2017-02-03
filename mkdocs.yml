@@ -5,6 +5,9 @@ site_url: http://uvicnotes.github.io/CSC-370/
 repo_url: https://github.com/UVicNotes/CSC-370
 site_description: Course Notes for CSC 370 - Foundations of Computer Science
 site_author: Brynn Hawker
+google_analytics:
+  - 'UA-91401009-1'
+  - 'auto'
 pages:
 - Home: 'index.md'
 - Notes:
