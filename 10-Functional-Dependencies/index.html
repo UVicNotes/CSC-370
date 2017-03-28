@@ -9,21 +9,21 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>Structured Query Language - CSC 370</title>
+        <title>Functional Dependencies - CSC 370</title>
       
       
         <meta name="description" content="Course Notes for CSC 370 - Foundations of Computer Science">
       
       
-        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/4-SQL/">
+        <link rel="canonical" href="http://uvicnotes.github.io/CSC-370/10-Functional-Dependencies/">
       
       
         <meta name="author" content="Brynn Hawker">
       
     
-    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/4-SQL/">
+    <meta property="og:url" content="http://uvicnotes.github.io/CSC-370/10-Functional-Dependencies/">
     <meta property="og:title" content="CSC 370">
-    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370/4-SQL//../">
+    <meta property="og:image" content="http://uvicnotes.github.io/CSC-370/10-Functional-Dependencies//../">
     <meta name="apple-mobile-web-app-title" content="CSC 370">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -85,7 +85,7 @@
             
           </span>
         
-        Structured Query Language
+        Functional Dependencies
       </div>
     </div>
     
@@ -208,30 +208,9 @@
       
         
   <li>
-    <a class="current" title="Structured Query Language" href="./">
+    <a class="" title="Structured Query Language" href="../4-SQL/">
       Structured Query Language
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="SQL Common Data Types" href="#sql-common-data-types">
-                SQL Common Data Types
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Creating Tables" href="#creating-tables">
-                Creating Tables
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
@@ -247,9 +226,14 @@
       
         
   <li>
-    <a class="" title="Functional Dependencies" href="../10-Functional-Dependencies/">
+    <a class="current" title="Functional Dependencies" href="./">
       Functional Dependencies
     </a>
+    
+      
+        
+      
+      
     
   </li>
 
@@ -275,95 +259,93 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="structured-query-language-sql">Structured Query Language (SQL)<a class="headerlink" href="#structured-query-language-sql" title="Permanent link">&para;</a></h1>
-<p><strong>Strutured Query Language (SQL)</strong>, <a href="http://english.stackexchange.com/questions/7231/how-is-sql-pronounced">often prounounced &ldquo;Sequel&rdquo;</a>, is a programming language for manipulating databases.</p>
-<h2 id="sql-common-data-types">SQL Common Data Types<a class="headerlink" href="#sql-common-data-types" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Data type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>CHARACTER(n)</code></td>
-<td>Character string. Fixed-length <code>n</code>.</td>
-</tr>
-<tr>
-<td><code>VARCHAR(n)</code></td>
-<td>Character string. Variable length. Maximum length <code>n</code>.</td>
-</tr>
-<tr>
-<td><code>BINARY(n)</code></td>
-<td>Binary string. Fixed-length <code>n</code>.</td>
-</tr>
-<tr>
-<td><code>BOOLEAN</code></td>
-<td>Stores <code>TRUE</code> or <code>FALSE</code> values.</td>
-</tr>
-<tr>
-<td><code>VARBINARY(n)</code></td>
-<td>Binary string. Variable length. Maximum length <code>n</code>.</td>
-</tr>
-<tr>
-<td><code>INTEGER(p)</code></td>
-<td>Integer numerical (no decimal). Precision <code>p</code>.</td>
-</tr>
-<tr>
-<td><code>DATE</code></td>
-<td>Stores year, month, and day values.</td>
-</tr>
-<tr>
-<td><code>TIME</code></td>
-<td>Stores hour, minute, and second values.</td>
-</tr>
-<tr>
-<td><code>TIMESTAMP</code></td>
-<td>Stores year, month, day, hour, minute, and second values.</td>
-</tr>
-<tr>
-<td><code>ARRAY</code></td>
-<td>A set-length and ordered collection of elements.</td>
-</tr>
-<tr>
-<td><code>MULTISET</code></td>
-<td>A variable-length and unordered collection of elements.</td>
-</tr>
-<tr>
-<td><code>XML</code></td>
-<td>Stores XML data.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="creating-tables">Creating Tables<a class="headerlink" href="#creating-tables" title="Permanent link">&para;</a></h2>
-<p>We can create a table with the <code>CREATE</code> command</p>
-<div class="code"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">Studios</span><span class="p">(</span>
-  <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span>
-  <span class="n">website</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
-<span class="p">);</span>
-</pre></div>
-
-
-<h3 id="creating-with-primary-keys">Creating with Primary Keys<a class="headerlink" href="#creating-with-primary-keys" title="Permanent link">&para;</a></h3>
-<p>To assign a single primary Keys</p>
-<div class="code"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">Studios</span><span class="p">(</span>
-  <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
-  <span class="n">website</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
-<span class="p">);</span>
-</pre></div>
-
-
-<p>To assign multiple primary Keys</p>
-<div class="code"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">Movies</span> <span class="p">(</span>
-  <span class="n">title</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
-  <span class="k">year</span> <span class="nb">INT</span><span class="p">,</span>
-  <span class="k">length</span> <span class="nb">INT</span><span class="p">,</span>
-  <span class="n">rating</span> <span class="nb">CHAR</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
-  <span class="n">studioname</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span>
-  <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="k">year</span><span class="p">)</span>
-<span class="p">);</span>
-</pre></div>
+          <h1 id="functional-dependencies-and-database-normalization">Functional Dependencies and Database Normalization<a class="headerlink" href="#functional-dependencies-and-database-normalization" title="Permanent link">&para;</a></h1>
+<p><strong>Example</strong></p>
+<p>Consider a table $R(A,B,C,D,E,F)$, with the following <em>functional dependencies</em>,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    AB &\to C \newline
+    BC &\to AD \newline
+    D &\to E \newline
+    CF &\to B.
+\end{aligned}</script>
+</p>
+<p>If we calculate the closure of $AB$,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    X &= \{ A, B \} \newline
+    X &= \{ A, B, C \} \newline
+    X &= \{ A, B, C, D \} \newline
+    X &= \{ A, B, C, D, E \} \newline
+\end{aligned}</script>
+</p>
+<p>So ${ A,B }^+ = AB^+ = ABCDE$. Then is $AB$ a <em>superkey</em>? No, because it didn&rsquo;t include $F$, therefore it is a violation.</p>
+<p>We can create the tables then,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    &R_1 (A, B, C, D, E) \newline
+    &R_2 (A, B, F) \newline
+\end{aligned}</script>
+</p>
+<p>and infer the functional dependencies,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    AB &\to E \newline
+    AB &\to D.
+\end{aligned}</script>
+</p>
+<p>We can then compute the closure on each subset of $X$ (but not $X = \varnothing$). If $X^+$ is all attributes the no need to do closure on a subset of $X$.</p>
+<p>If we find $X$ such that $X^+$ is <strong>not</strong> all the attrib then we get a violating functional dependency.</p>
+<p><strong>Example</strong></p>
+<p>Consider the table $\text{Movies} ( \text{title}, \text{year}, \text{studioname}, \text{president}, \text{presAddr} )$ with the following functional dependencies,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \text{title}, \text{year} &\to \text{studioname} \newline
+    \text{studioname} &\to \text{president} \newline
+    \text{president} &\to \text{presAddr}
+\end{aligned}</script>
+</p>
+<p>where each movie is only produced by one studio. This gives us the closures,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \text{title}^+ &= \text{title} \newline
+    \text{year}^+ &= \text{year} \newline
+    \text{title, year}^+ &= \text{title}, \text{year}, \text{studioname}, \text{president}, \text{presAddr} \newline
+\end{aligned}</script>
+</p>
+<p>So $\text{title}, \text{year}$ <strong>is</strong> a superkey. For $\text{studioname}$,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \text{studioname}^+ &= \text{studioname}, \text{president}, \text{presAddr}
+\end{aligned}</script>
+</p>
+<p>so $\text{studioname}$ is <strong>not</strong> a superkey and is therefore violates Boyce-Codd Normal Form (BCNF). The gives us the dependency,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \text{studioname} \to \text{president}, \text{presAddr}.
+\end{aligned}</script>
+</p>
+<p>To resolve the violation we can decompose movies into,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    &\text{Movies}_1 ( \text{studioname}, \text{president}, \text{presAddr} ) \newline
+    &\text{Movies}_2 ( \text{title}, \text{year}, \text{studioname} ) 
+\end{aligned}</script>
+</p>
+<p>We can verify, $\text{Movies}_2$ is in BCNF however $\text{Movies}_1$ is not since $\text{president} \to \text{presAddr}$. So the closure is,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \text{president}^+ &= \text{president}, \text{presAddr}
+\end{aligned}</script>
+</p>
+<p>and $\text{president} \to \text{presAddr}$ violates $BCNF$. We can decompose the tables further,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \text{Movies}_{1,1} ~&( \text{president}, \text{presAddr} ) \newline
+    \text{Movies}_{1,2} ~&( \text{studioname}, \text{president} ) \newline
+    \text{Movies}_2 ~&( \text{title}, \text{year}, \text{studioname} ) 
+\end{aligned}</script>
+</p>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -380,7 +362,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../3-ER-diagrams-and-Relations/" title="E/R Diagrams to Relations">
+        <a href="../5-Relational-Algebra/" title="Relational Algebra">
           <span class="direction">
             Previous
           </span>
@@ -390,7 +372,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                E/R Diagrams to Relations
+                Relational Algebra
               </div>
             </div>
           </div>
@@ -398,22 +380,6 @@
       
     </div>
     <div class="next">
-      
-        <a href="../5-Relational-Algebra/" title="Relational Algebra">
-          <span class="direction">
-            Next
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                Relational Algebra
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-arrow-right"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>
