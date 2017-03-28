@@ -16,6 +16,7 @@ pages:
     - 'E/R Diagrams to Relations': '3-ER-diagrams-and-Relations.md'
     - 'Structured Query Language': '4-SQL.md'
     - 'Relational Algebra': '5-Relational-Algebra.md'
+    - 'Functional Dependencies': '10-Functional-Dependencies.md'
 extra_javascript:
     - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     - https://cdn.rawgit.com/UVicNotes/UVicNotes/81099952ba789829fab1840e5d26cb5a2bf62011/helpers/mathjax.js
