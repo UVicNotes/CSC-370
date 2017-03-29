@@ -1,5 +1,12 @@
 # Functional Dependencies and Database Normalization
 
+## Boyce-Codd Normal Form
+
+A relational schema R is in Boyce-Codd normal form if and only if for every one of its dependencies $X \to Y$, at least one of the following conditions hold:
+
+* $X \to Y$ is a trivial functional dependency ($Y \subseteq X$)
+* $X$ is a super key for schema $R$.
+
 **Example**
 
 Consider a table $R(A,B,C,D,E,F)$, with the following *functional dependencies*,
@@ -91,3 +98,34 @@ $$\begin{aligned}
     \text{Movies}_{1,2} ~&( \text{studioname}, \text{president} ) \newline
     \text{Movies}_2 ~&( \text{title}, \text{year}, \text{studioname} ) 
 \end{aligned}$$
+
+## Third-normal Form
+
+An attribute is considered **prime** if it is a member of the same key. The functional dependency
+
+$$
+    X \to A
+$$
+
+is a violating functional dependency if and only if,
+
+1. $X$ is not a superkey
+1. $A$ is not *prime*
+
+**Example**
+
+Consider the relation $R(A,B,C)$ with the following functional dependencies
+
+$$\begin{aligned}
+    AB &\to C \newline
+    C &\to B
+\end{aligned}$$
+
+the only violating functional dependency is $C \to B$. We can decompose into the relations,
+
+$$\begin{aligned}
+    &R_1 (C,B) \newline
+    &R_2 (C,A).
+\end{aligned}$$ 
+
+In this case we could have insertion issues inserting into both relations.
