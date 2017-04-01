@@ -139,7 +139,7 @@
         
         <br>
         <a href="https://github.com/UVicNotes/CSC-370/commits/master" target="_blank" title="Last Updated">
-          Updated Mar 28, 2017
+          Updated Apr 1, 2017
         </a>
       </div>
     </div>
@@ -234,6 +234,22 @@
         
       
       
+        <ul>
+          
+            <li class="anchor">
+              <a title="Boyce-Codd Normal Form" href="#boyce-codd-normal-form">
+                Boyce-Codd Normal Form
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Third-normal Form" href="#third-normal-form">
+                Third-normal Form
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -260,6 +276,12 @@
         <div class="wrapper">
           
           <h1 id="functional-dependencies-and-database-normalization">Functional Dependencies and Database Normalization<a class="headerlink" href="#functional-dependencies-and-database-normalization" title="Permanent link">&para;</a></h1>
+<h2 id="boyce-codd-normal-form">Boyce-Codd Normal Form<a class="headerlink" href="#boyce-codd-normal-form" title="Permanent link">&para;</a></h2>
+<p>A relational schema R is in Boyce-Codd normal form if and only if for every one of its dependencies $X \to Y$, at least one of the following conditions hold:</p>
+<ul>
+<li>$X \to Y$ is a trivial functional dependency ($Y \subseteq X$)</li>
+<li>$X$ is a super key for schema $R$.</li>
+</ul>
 <p><strong>Example</strong></p>
 <p>Consider a table $R(A,B,C,D,E,F)$, with the following <em>functional dependencies</em>,</p>
 <p>
@@ -346,6 +368,34 @@
     \text{Movies}_2 ~&( \text{title}, \text{year}, \text{studioname} ) 
 \end{aligned}</script>
 </p>
+<h2 id="third-normal-form">Third-normal Form<a class="headerlink" href="#third-normal-form" title="Permanent link">&para;</a></h2>
+<p>An attribute is considered <strong>prime</strong> if it is a member of the same key. The functional dependency</p>
+<p>
+<script type="math/tex; mode=display">
+    X \to A
+</script>
+</p>
+<p>is a violating functional dependency if and only if,</p>
+<ol>
+<li>$X$ is not a superkey</li>
+<li>$A$ is not <em>prime</em></li>
+</ol>
+<p><strong>Example</strong></p>
+<p>Consider the relation $R(A,B,C)$ with the following functional dependencies</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    AB &\to C \newline
+    C &\to B
+\end{aligned}</script>
+</p>
+<p>the only violating functional dependency is $C \to B$. We can decompose into the relations,</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+    &R_1 (C,B) \newline
+    &R_2 (C,A).
+\end{aligned}</script>
+</p>
+<p>In this case we could have insertion issues inserting into both relations.</p>
           <aside class="copyright" role="note">
             
             Documentation built with
